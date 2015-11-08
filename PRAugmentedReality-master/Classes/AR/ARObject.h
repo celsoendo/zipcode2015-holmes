@@ -45,10 +45,13 @@
     // Overlay View Objects
     IBOutlet UILabel *titleL;
     IBOutlet UILabel *distanceL;
+    __weak IBOutlet UIImageView *pillImage;
 }
 
 @property (nonatomic, strong) NSString *arTitle;
 @property (nonatomic, strong) NSNumber *distance;
+@property (nonatomic, strong) NSString *imageName;
+
 
 - (id)initWithId:(int)newId
            title:(NSString*)newTitle

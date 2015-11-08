@@ -36,7 +36,7 @@ extern NSString* test;
 
 @implementation ARObject
 
-@synthesize arTitle, distance;
+@synthesize arTitle, distance, imageName;
 
 - (id)initWithId:(int)newId
            title:(NSString*)newTitle
@@ -99,6 +99,7 @@ andUID:(NSString *)uID
     [super viewDidAppear:animated];
     
     [titleL setText:arTitle];
+    [pillImage setImage:[UIImage imageNamed:imageName]];
     
     [distanceL setText:[self getDistanceLabelText]];
 }

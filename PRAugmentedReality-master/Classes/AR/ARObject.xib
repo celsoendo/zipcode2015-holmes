@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ARObject">
             <connections>
                 <outlet property="distanceL" destination="10" id="291"/>
+                <outlet property="pillImage" destination="218" id="jro-PA-hl8"/>
                 <outlet property="titleL" destination="6" id="30"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
@@ -17,7 +18,7 @@
             <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="spatial" image="pill" translatesAutoresizingMaskIntoConstraints="NO" id="218" customClass="PillImageView">
+                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="spatial" image="pill" translatesAutoresizingMaskIntoConstraints="NO" id="218" userLabel="aasdasd">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
                     <animations/>
                 </imageView>

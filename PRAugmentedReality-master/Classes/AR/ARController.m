@@ -214,12 +214,17 @@ CATransform3DMake(CGFloat m11, CGFloat m12, CGFloat m13, CGFloat m14,
     
     ARObject *arObject = nil;
     
+    NSArray* images = @[@"ar_overlay_blue.png", @"ar_overlay_green.png", @"ar_overlay_orange.png", @"ar_overlay_red.png"];
+    
+    int count = 0;
     for (NSNumber *ar_id in geoobjectOverlays.allKeys) {
         arObject = geoobjectOverlays[ar_id];
         
         x_pos = [geoobjectPositions[ar_id] intValue];
         vertPosition = [geoobjectVerts[ar_id] intValue];
         y_pos = [self setYPosForView:arObject.view atVerticalPos:vertPosition];
+        
+        arObject.imageName = [images objectAtIndex:count%4];
         
         // Subtract the half the width to the x_pos so it points to the right place with it's right tip
         [arObject.view setFrame:CGRectMake(x_pos, y_pos,
@@ -229,6 +234,7 @@ CATransform3DMake(CGFloat m11, CGFloat m12, CGFloat m13, CGFloat m14,
         [self warpView:arObject.view atVerticalPosition:vertPosition];
         
         [geoobjectOverlays setObject:arObject forKey:ar_id];
+        count ++;
     }
 }
 
