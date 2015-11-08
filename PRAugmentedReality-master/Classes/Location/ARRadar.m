@@ -64,7 +64,7 @@
     
     CGContextRef contextRef = UIGraphicsGetCurrentContext();
     
-    CGContextSetRGBFillColor(contextRef, 0.2, 1, 0.2, 0.8);
+    CGContextSetRGBFillColor(contextRef, 0.87, .4, 0.4, 1);
     
     int max = [[[theSpots allValues] valueForKeyPath:@"@max.intValue"] intValue];
     int min = [[[theSpots allValues] valueForKeyPath:@"@min.intValue"] intValue];
@@ -134,14 +134,9 @@
 -(void)setupRadarImages
 {
     radarMV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-    [radarMV setImage:[UIImage imageNamed:@"RadarMV.png"]];
-    
-    radarBars = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-    [radarBars setImage:[UIImage imageNamed:@"Radar.png"]];
-    [radarBars setAlpha:0.3];
-    
+    [radarMV setImage:[UIImage imageNamed:@"Compas.png"]];
+
     [self addSubview:radarMV];
-    [self addSubview:radarBars];
 }
 -(void)setupSpots:(NSArray*)spots
 {
@@ -174,8 +169,6 @@
         
         [self setupRadarImages];
         [self setupSpots:spots];
-        
-        [self turnRadar];
 
     }
     return self;
@@ -184,22 +177,11 @@
 
 #pragma mark - Moving the radar scanner
 
-#define RADIANS( degrees )      ((degrees)*(M_PI/180))
--(void)turnRadar
-{
-    CABasicAnimation *rotation;
-    rotation = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
-    rotation.fromValue = [NSNumber numberWithFloat:0];
-    rotation.toValue = [NSNumber numberWithFloat:(RADIANS(360))];
-    rotation.duration = 3;
-    rotation.repeatCount = HUGE_VALF;
-    [radarMV.layer addAnimation:rotation forKey:@"Spin"];
-}
 
 - (void)moveDots:(int)angle
 {
-    self.transform = CGAffineTransformMakeRotation(-RADIANS(angle));
-    radarBars.transform = CGAffineTransformMakeRotation(RADIANS(angle));
+    //self.transform = CGAffineTransformMakeRotation(-RADIANS(angle));
+    //radarBars.transform = CGAffineTransformMakeRotation(RADIANS(angle));
 }
 
 

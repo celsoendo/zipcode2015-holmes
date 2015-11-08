@@ -15,21 +15,13 @@
             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="RadarMV.png" translatesAutoresizingMaskIntoConstraints="NO" id="9" userLabel="Green">
-                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                </imageView>
-                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Radar.png" translatesAutoresizingMaskIntoConstraints="NO" id="10" userLabel="Bars">
+                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="radar" translatesAutoresizingMaskIntoConstraints="NO" id="9" userLabel="Green">
                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="10" firstAttribute="bottom" secondItem="1" secondAttribute="bottom" id="11"/>
-                <constraint firstItem="10" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="12"/>
-                <constraint firstItem="10" firstAttribute="top" secondItem="1" secondAttribute="top" id="13"/>
-                <constraint firstItem="10" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="14"/>
                 <constraint firstItem="9" firstAttribute="bottom" secondItem="1" secondAttribute="bottom" id="15"/>
                 <constraint firstItem="9" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="16"/>
                 <constraint firstItem="9" firstAttribute="top" secondItem="1" secondAttribute="top" id="17"/>
@@ -40,7 +32,6 @@
         </view>
     </objects>
     <resources>
-        <image name="Radar.png" width="400" height="400"/>
-        <image name="RadarMV.png" width="400" height="400"/>
+        <image name="radar" width="50" height="50"/>
     </resources>
 </document>
