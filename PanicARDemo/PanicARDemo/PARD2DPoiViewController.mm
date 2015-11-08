@@ -51,7 +51,7 @@ bool _areOptionsVisible = false;
     [super loadView];
     
     //set range of radar, all POIs farther away than 1500 meters will appear on the edge of the radar
-    [self.arRadarView setRadarRange:1500];
+    [self.arRadarView setRadarRange:5];
     
     [self cameraCaptureSession];
 }
@@ -347,35 +347,22 @@ bool _areOptionsVisible = false;
     
     [self getLocations];
     
-    /*
-     // now add a poi (a graphic only - no text)
-     PARPoi* newPoi = nil;
-     newPoi = [[PARPoi alloc] initWithImage:@"DefaultImage"
-     atLocation:[[CLLocation alloc] initWithLatitude:51.500141 longitude:-0.126257]
-     ];
-     newPoi.offset = CGPointMake(0, 0); // use this to move the poi relative to his final position on screen
-     [[PARController sharedARController] addObject:newPoi];
-     
-     // Add another POI, near our Headquarters – display an image on it using a custom PoiLabelTemplate
-     newPoiLabel = [[poiLabelClass alloc] initWithTitle:@"Dom"
-     theDescription:@"Regensburger Dom"
-     theImage:[UIImage imageNamed:@"Icon@2x~ipad"]
-     fromTemplateXib:@"PoiLabelWithImage"
-     atLocation:[[CLLocation alloc] initWithLatitude:49.019512 longitude:12.097709]
-     ];
-     [[PARController sharedARController] addObject:newPoiLabel];
-     */
     NSLog(@"Number of PAR Objects in SharedController: %d", [[PARController sharedARController] numberOfObjects]);
     
     _hasARPoiObjects = YES;
 }
 
 -(void) getLocations {
-    CLLocation* l = [[self deviceAttitude] location];
-    CLLocationCoordinate2D c = [l coordinate];
+    CLLocationManager *locationManager;
+    locationManager = [[CLLocationManager alloc] init];
+    locationManager.distanceFilter = kCLDistanceFilterNone;
+    locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
+    [locationManager startUpdatingLocation];
+    double myLat = locationManager.location.coordinate.latitude;
+    double myLng = locationManager.location.coordinate.longitude;
     
     //create the url to call
-    NSString *APIstring = [NSString stringWithFormat:@"https://zipcode-rece.c9users.io:8080/api/listings?lat=%f&lon=%f", c.latitude, c.longitude];
+    NSString *APIstring = [NSString stringWithFormat:@"https://zipcode-rece.c9users.io:8080/api/retsly/listings?lat=%f&lon=%f", myLat, myLng];
     NSLog(APIstring);
     NSURL *infoURL = [[NSURL alloc] initWithString:APIstring];
     NSURLRequest *infoRequest = [[NSURLRequest alloc] initWithURL:infoURL];
@@ -415,38 +402,8 @@ bool _areOptionsVisible = false;
                                                                             theDescription:subtitle
                                                                                 atLocation:[[CLLocation alloc] initWithLatitude:lat longitude:lng]
                                                        ]];
-        
-        NSLog(@"added a thing to the thing");
     }
 }
-
-
-
-- (void)requestDataFromServer {
-    //create request for data
-    NSURL *infoURL = [[NSURL alloc] initWithString:@"http://uwl.probitystaging.com/APIs/pages.php"];
-    NSURLRequest *infoRequest = [[NSURLRequest alloc] initWithURL:infoURL];
-    [NSURLConnection sendAsynchronousRequest:infoRequest queue:[[NSOperationQueue alloc]init] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-        
-        //handle sercer response
-        NSError *error= [[NSError alloc] init];
-        if (connectionError!=nil) {
-            NSLog(@"connection error");
-        } else {
-            NSArray *content = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
-            [self parseData:content];
-        }
-    }];
-}
-
--(void) parseData:(NSArray *)data {
-    NSDictionary *eachRow;
-    // Parse each row of data from API
-    for (eachRow in data) {
-        NSLog(@"as");
-    }
-}
-
 
 -(void) captureNow
 {
