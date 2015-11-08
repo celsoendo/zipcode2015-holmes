@@ -103,6 +103,24 @@ module.exports = function(app) {
         });
     });
     
+    app.get('/api/retsly/listing', function(req, res) {
+        var listingId = req.param('id', 0);
+        if (!listingId) {
+            res.json({error: 'no listing informed!'});
+        }
+
+        var retsly = Retsly.create(config.Retsly.Token, config.Retsly.Dataset);
+        
+        var retslyRequest = retsly.listings();
+        
+        console.log("Retsly getting listing = " + listingId);
+        
+        retslyRequest.get(listingId, function(err, data) {
+            if (err) throw err;
+            res.json(data.bundle);
+        });
+    });
+    
     app.get('/api/google/nearby', function(req, res) {
         var lat = req.param('lat', config.default.coordinates.lat);
         var lon = req.param('lon', config.default.coordinates.lon);
@@ -124,6 +142,31 @@ module.exports = function(app) {
         placeSearch
             .then(function(response){
                 res.json(response)
+            })
+            .fail(function(error){
+                throw error;
+            });
+    });
+    
+    app.get('/api/google/place', function(req, res) {
+        var place_id = req.param('id', 0);
+        if (!place_id) {
+            res.json({error: 'no place informed!'});
+        }
+
+        var placesPromises = new GooglePlacesPromises(config.Google.apiKey, config.Google.outputFormat);
+                 
+        var searchParams = {
+            placeid: place_id
+        };
+        
+        console.log("Google searching place id = " + place_id);
+        
+        var placeDetails = placesPromises.placeDetailsRequest(searchParams);
+         
+        placeDetails
+            .then(function(response){
+                res.json(response.result)
             })
             .fail(function(error){
                 throw error;

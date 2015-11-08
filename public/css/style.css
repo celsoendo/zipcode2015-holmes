@@ -1,16 +1,25 @@
+h1 {
+  font-size: 7rem; }
+
+.margin-top-s {
+  margin-top: 15px; }
+
+.white-background {
+  background-color: white; }
+
 .bar, .rec1, .rec2, .rec3, .rec4, .rec5-1, .rec5-2, .rec6-1, .rec6-2, .rec7-1, .rec7-2 {
-  border-radius: 20px;
-  height: 40px;
+  border-radius: 25px;
+  height: 50px;
   margin: 0 auto;
-  margin-bottom: 10px; }
+  margin-bottom: 12.5px; }
 
 .doorLeft, .rec5-1, .rec6-1, .rec7-1 {
-  width: 281.25px;
+  width: 225px;
   float: left;
-  margin-right: 125px; }
+  margin-right: 100px; }
 
 .doorRight, .rec5-2, .rec6-2, .rec7-2 {
-  width: 93.75px;
+  width: 75px;
   float: left; }
 
 .blue, .rec1, .rec3, .rec5-2, .rec6-1, .rec7-2 {
@@ -26,19 +35,20 @@
   background-color: #f4b171; }
 
 .logoRow {
-  width: 500px; }
+  width: 400px;
+  margin: 0 auto; }
 
 .rec1 {
-  width: 166.5px; }
+  width: 133.2px; }
 
 .rec2 {
-  width: 277.66667px; }
+  width: 222.13333px; }
 
 .rec3 {
-  width: 388.83333px; }
+  width: 311.06667px; }
 
 .rec4 {
-  width: 500px; }
+  width: 400px; }
 
 .delay1 {
   animation-delay: 0.2s; }
@@ -60,5 +70,18 @@
     color: #94c380; }
   .holmes span:nth-of-type(6) {
     color: #a0c5e6; }
+
+.angular-google-map-container {
+  height: 400px; }
+
+.query-input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #d3d3d3;
+  font-size: 35px;
+  color: #9b9b9b;
+  width: 600px;
+  margin-bottom: 45px; }
 
 /*# sourceMappingURL=style.css.map */
