@@ -111,7 +111,7 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sf_house" translatesAutoresizingMaskIntoConstraints="NO" id="PnP-oJ-9Na">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="new_sf_house.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PnP-oJ-9Na">
                                 <rect key="frame" x="0.0" y="25" width="327" height="219"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -154,7 +154,7 @@
     </scenes>
     <resources>
         <image name="LoadingBack" width="200" height="200"/>
-        <image name="sf_house" width="1024" height="786"/>
+        <image name="new_sf_house.jpg" width="1024" height="786"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="R6e-lS-Vhq"/>

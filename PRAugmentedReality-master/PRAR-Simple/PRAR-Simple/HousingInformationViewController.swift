@@ -154,7 +154,7 @@ class HousingInformationViewController: UIViewController, UICollectionViewDelega
     }
     
     func navigationButtonPressed() {
-        let stringURL = "http://maps.apple.com/?sll=" + (String(self.apiData["coordinates"]![1])) + "," + (String(self.apiData["coordinates"]![0]))
+        let stringURL = "http://maps.apple.com/?q=" + (String(self.apiData["coordinates"]![1])) + "," + (String(self.apiData["coordinates"]![0]))
         let targetURL = NSURL(string: stringURL)
         UIApplication.sharedApplication().openURL(targetURL!)
     }

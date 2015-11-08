@@ -35,6 +35,7 @@
 		41A995091BEF307F00D42195 /* ARObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A995081BEF307F00D42195 /* ARObjectView.swift */; };
 		41A9950D1BEF37F700D42195 /* Global.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A9950C1BEF37F700D42195 /* Global.m */; };
 		41BC54A31BEFB80500613CC1 /* house.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41BC54A21BEFB80500613CC1 /* house.jpg */; };
+		41BC54A51BEFD3D400613CC1 /* new_sf_house.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41BC54A41BEFD3D400613CC1 /* new_sf_house.jpg */; };
 		41EAEB5A1BEF5A4F0075B7B6 /* HousingInformationViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EAEB591BEF5A4F0075B7B6 /* HousingInformationViewCell.swift */; };
 		81D67E531BEF47B800832D38 /* pill.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81D67E521BEF47B800832D38 /* pill.xcassets */; };
 		98A03FB41BEF7BA3001B0748 /* Compas.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A03FB31BEF7BA3001B0748 /* Compas.png */; };
@@ -98,6 +99,7 @@
 		41A9950C1BEF37F700D42195 /* Global.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Global.m; path = ../Global.m; sourceTree = "<group>"; };
 		41A9950E1BEF3C4600D42195 /* PropertyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyModel.swift; sourceTree = "<group>"; };
 		41BC54A21BEFB80500613CC1 /* house.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = house.jpg; sourceTree = "<group>"; };
+		41BC54A41BEFD3D400613CC1 /* new_sf_house.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = new_sf_house.jpg; sourceTree = "<group>"; };
 		41EAEB591BEF5A4F0075B7B6 /* HousingInformationViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousingInformationViewCell.swift; sourceTree = "<group>"; };
 		81D67E481BEF3DA300832D38 /* ar_overlay_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ar_overlay_blue.png; sourceTree = "<group>"; };
 		81D67E491BEF3DA300832D38 /* ar_overlay_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ar_overlay_green.png; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 		36CB219118E49992000483F2 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				41BC54A41BEFD3D400613CC1 /* new_sf_house.jpg */,
 				81D67E481BEF3DA300832D38 /* ar_overlay_blue.png */,
 				41BC54A21BEFB80500613CC1 /* house.jpg */,
 				81D67E491BEF3DA300832D38 /* ar_overlay_green.png */,
@@ -382,6 +385,7 @@
 				36CB212E18E480E7000483F2 /* InfoPlist.strings in Resources */,
 				36CB21A818E49992000483F2 /* ARRadar.xib in Resources */,
 				36CB21A218E49992000483F2 /* ar_icon.png in Resources */,
+				41BC54A51BEFD3D400613CC1 /* new_sf_house.jpg in Resources */,
 				36CB216418E48338000483F2 /* Media.xcassets in Resources */,
 				98C362FB1BEF14570001E46A /* ARObject.xib in Resources */,
 				36CB218618E490B8000483F2 /* LoadingBack.png in Resources */,
