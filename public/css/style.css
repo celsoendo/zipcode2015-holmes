@@ -1,25 +1,25 @@
-.bar, .rec1, .rec2, .rec3, .rec4, .rec5-1, .rec5-2 {
+.bar, .rec1, .rec2, .rec3, .rec4, .rec5-1, .rec5-2, .rec6-1, .rec6-2, .rec7-1, .rec7-2 {
   border-radius: 10px;
   height: 20px;
   margin: 0 auto;
   margin-bottom: 5px; }
 
-.doorLeft, .rec5-1 {
+.doorLeft, .rec5-1, .rec6-1, .rec7-1 {
   width: 281.25px;
   float: left;
   margin-right: 125px; }
 
-.doorRight, .rec5-2 {
+.doorRight, .rec5-2, .rec6-2, .rec7-2 {
   width: 93.75px;
   float: left; }
 
-.blue, .rec1, .rec3, .rec5-2 {
+.blue, .rec1, .rec3, .rec5-2, .rec6-1, .rec7-2 {
   background-color: #a0c5e6; }
 
-.green, .rec5-1 {
+.green, .rec5-1, .rec7-1 {
   background-color: #94c380; }
 
-.red, .rec2 {
+.red, .rec2, .rec6-2 {
   background-color: #de6768; }
 
 .orange, .rec4 {
