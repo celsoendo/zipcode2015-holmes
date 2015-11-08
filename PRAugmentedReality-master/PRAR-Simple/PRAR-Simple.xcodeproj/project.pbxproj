@@ -201,12 +201,12 @@
 		36CB215818E481B2000483F2 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
-				98C362F41BEF0F650001E46A /* icon@3.png */,
 				98C362F51BEF0F650001E46A /* icon@2.png */,
 				98C362F61BEF0F650001E46A /* icon@1.png */,
 				36CB218518E490B8000483F2 /* LoadingBack.png */,
 				36CB218118E4861B000483F2 /* launch.png */,
 				36CB218218E4861B000483F2 /* launchR4.png */,
+				98C362F41BEF0F650001E46A /* icon@3.png */,
 			);
 			path = Graphics;
 			sourceTree = "<group>";
