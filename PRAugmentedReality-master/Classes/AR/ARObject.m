@@ -113,27 +113,16 @@ andUID:(NSString *)uID
 
 //The event handling method
 - (void)handleSingleTap:(UITapGestureRecognizer *)recognizer {
-//    CGPoint location = [recognizer locationInView:[recognizer.view superview]];
-    
-    //Do stuff here...
-//    NSLog(@"hello");
 
-//    HousingInformationViewController *destinationVC = [[HousingInformationViewController alloc] init];
-//    [self.navigationController presentViewController:destinationVC animated:nil completion:nil];
-//    [self.navigationController pushViewController:destinationVC animated:YES];
-
-    
-    
-    
-//    [self.navigationController performSegueWithIdentifier:@"showDetail" sender:self];
     test = _uID;
     
+//    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    UIViewController *initViewController = [storyBoard instantiateInitialViewController];
+//    [self.view.window setRootViewController:initViewController];
+    
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *initViewController = [storyBoard instantiateInitialViewController];
-    [self.view.window setRootViewController:initViewController];
-    
-    
-//    [self.navigationController performSegueWithIdentifier:@"getDetail" sender:self];
+    HousingInformationViewController *initViewController = [storyBoard instantiateViewControllerWithIdentifier:@"HouseInfo"];
+    [self.view.window.rootViewController presentViewController:initViewController animated:true completion:nil];
     
 }
 

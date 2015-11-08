@@ -20,8 +20,8 @@ class HousingInformationViewController: UIViewController, UICollectionViewDelega
     override func viewDidLoad() {
         self.view.backgroundColor = UIColor.whiteColor()
         global_uid = AppDelegate.getGlobalString()
-//        allCheckoutItemTiles.delegate = self
-//        allCheckoutItemTiles.dataSource = self
+        allCheckoutItemTiles.delegate = self
+        allCheckoutItemTiles.dataSource = self
         
     }
     

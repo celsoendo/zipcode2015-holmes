@@ -45,10 +45,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--Housing Information View Controller-->
+        <!--HouseInfo-->
         <scene sceneID="UwK-tm-Ibv">
             <objects>
-                <viewController storyboardIdentifier="house" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3HV-w7-27b" customClass="HousingInformationViewController" customModule="PRAR_Simple" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HouseInfo" title="HouseInfo" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3HV-w7-27b" customClass="HousingInformationViewController" customModule="PRAR_Simple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eAc-4O-UE3"/>
                         <viewControllerLayoutGuide type="bottom" id="ZBZ-2F-hbK"/>
