@@ -61,7 +61,7 @@ extern int test;
     
     
     // Initialize your current location as 0,0 (since it works with our randomly generated locations)
-    CLLocationCoordinate2D locationCoordinates = CLLocationCoordinate2DMake(0, 0);
+//    CLLocationCoordinate2D locationCoordinates = CLLocationCoordinate2DMake(0, 0);
     
 
 
@@ -79,7 +79,7 @@ extern int test;
     double myLng = -111.929040; //locationManager.location.coordinate.longitude;
     
     //create the url to call
-    NSString *APIstring = [NSString stringWithFormat:@"https://zipcode-rece.c9users.io:8080/api/retsly/listings?lat=%f&lon=%f", myLat, myLng];
+    NSString *APIstring = [NSString stringWithFormat:@"https://zipcode-rece.c9users.io:8080/api/listings?lat=%f&lon=%f", myLat, myLng];
     NSLog(APIstring);
     NSURL *infoURL = [[NSURL alloc] initWithString:APIstring];
     NSURLRequest *infoRequest = [[NSURLRequest alloc] initWithURL:infoURL];
@@ -104,11 +104,14 @@ extern int test;
     
     NSMutableArray *points = [NSMutableArray arrayWithCapacity:NUMBER_OF_POINTS];
     
-    NSArray* locations = [data objectForKey:@"bundle"];
+    NSArray* locations = [data objectForKey:@"listings"];
+    NSArray* nearByLocations = [data objectForKey:@"nearBy"];
     
     //replace all objects with our new set of objects
     //[[PARController sharedARController] clearObjects];
     NSLog(@"LOCATIONS COUNT: %lu",(unsigned long)[locations count]);
+    NSLog(@"LOCATIONS NEARBY COUNT: %lu",(unsigned long)[nearByLocations count]);
+    
     for(int i = 0; i < [locations count]; i ++) {
         NSDictionary* thisLocation = [locations objectAtIndex:i];
         
@@ -121,19 +124,36 @@ extern int test;
         double lat = [[coordinates objectAtIndex:1] doubleValue];
         double lng = [[coordinates objectAtIndex:0] doubleValue];
         
-        //        [[PARController sharedARController] addObject:[[poiLabelClass alloc] initWithTitle:title
-        //                                                                            theDescription:subtitle
-        //                                                                                atLocation:[[CLLocation alloc] initWithLatitude:lat longitude:lng]
-        //                                                       ]];
         NSDictionary *point = @{
                                 @"id" : @(i),
                                 @"title" : [NSString stringWithFormat:@"%@", subtitle],
                                 @"lon" : @(lng),
-                                @"lat" : @(lat)
+                                @"lat" : @(lat),
+                                @"type": @"location"
                                 };
         [points addObject:point];
         NSLog(@"added a location");
     }
+    
+    for(int i = 0; i < [nearByLocations count]; i ++) {
+        NSDictionary* thisLocation = [nearByLocations objectAtIndex:i];
+        NSString* title = [thisLocation objectForKey:@"name"];
+        NSString* subtitle = [thisLocation objectForKey:@"vicinity"];
+        NSDictionary* coordinates = [[thisLocation objectForKey:@"geometry"] objectForKey:@"location"];
+        double lat = [[coordinates objectForKey:@"lat"] doubleValue];
+        double lng = [[coordinates objectForKey:@"lon"] doubleValue];
+        
+        NSDictionary *point = @{
+                                @"id" : @(i + [locations count]),
+                                @"title" : title,
+                                @"lon" : @(lng),
+                                @"lat" : @(lat),
+                                @"type": @"nearBy"
+                                };
+        [points addObject:point];
+        NSLog(@"added a nearBy location");
+    }
+    
     CLLocationCoordinate2D locationCoordinates = CLLocationCoordinate2DMake(33.424303, -111.929040);
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.prARManager startARWithData:[NSArray arrayWithArray:points] forLocation:locationCoordinates];
