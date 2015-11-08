@@ -18,7 +18,10 @@
 
 @interface ViewController ()
 extern int test;
+
+
 @property (nonatomic, strong) PRARManager *prARManager;
+@property (nonatomic, strong) PropertyModel *propertyManager;
 
 @end
 
@@ -41,6 +44,7 @@ extern int test;
     
     // Initialize the manager so it wakes up (can do this anywhere you want
     self.prARManager = [[PRARManager alloc] initWithSize:self.view.frame.size delegate:self showRadar:YES];
+    self.propertyManager = [PropertyModel sharedInstance];
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -107,6 +111,9 @@ extern int test;
     NSLog(@"LOCATIONS COUNT: %lu",(unsigned long)[locations count]);
     for(int i = 0; i < [locations count]; i ++) {
         NSDictionary* thisLocation = [locations objectAtIndex:i];
+        
+        // Storing into property manager model
+        self.propertyManager.propertyDetailManager[ [thisLocation objectForKey:@"id"] ] = thisLocation;
         
         NSString* title = [thisLocation objectForKey:@"baths"];
         NSString* subtitle = [thisLocation objectForKey:@"address"];

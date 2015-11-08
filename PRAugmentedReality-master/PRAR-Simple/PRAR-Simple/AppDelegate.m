@@ -10,6 +10,10 @@
 
 @implementation AppDelegate
 int test = 0;
+NSMutableDictionary* dictionary = @{}.mutableCopy;
+
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.

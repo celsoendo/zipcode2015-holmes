@@ -8,7 +8,7 @@
 
 import Foundation
 
-class PropertyModel {
+@objc class PropertyModel:NSObject {
     
     class var sharedInstance: PropertyModel {
         struct Static {
@@ -24,21 +24,21 @@ class PropertyModel {
     }
     
     /* Attributes */
-    var propertyDetailManager: [Int: NSDictionary]!
+    @objc var propertyDetailManager: [Int: NSDictionary]!
     
-    init() {
+    override init() {
         propertyDetailManager = [Int: NSDictionary]()
     }
     
     /* Functions */
     
     /* Setters */
-    func fillUpDetails(input : NSDictionary, propertyIdentifier: Int) {
+    @objc func fillUpDetails(input : NSDictionary, propertyIdentifier: Int) {
         self.propertyDetailManager[propertyIdentifier] = input;
     }
     
     /* Getters */
-    func getDetails(propertyIdentifier: Int) -> NSDictionary {
+    @objc func getDetails(propertyIdentifier: Int) -> NSDictionary {
         return self.propertyDetailManager[propertyIdentifier]!
     }
     
