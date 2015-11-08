@@ -124,7 +124,7 @@
             y+=(yWidth*distModifier)*(1-((y-Ny)/yWidth));
         }
         
-        CGContextFillEllipseInRect(contextRef, CGRectMake(x, y, 4, 4));
+        CGContextFillEllipseInRect(contextRef, CGRectMake(x, y, 8, 8));
     }
 }
 
@@ -133,10 +133,11 @@
 
 -(void)setupRadarImages
 {
-    radarMV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-    [radarMV setImage:[UIImage imageNamed:@"Compas.png"]];
+    radarBars = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    [radarBars setImage:[UIImage imageNamed:@"Compas.png"]];
+    [radarBars setAlpha:0.6];
 
-    [self addSubview:radarMV];
+    [self addSubview:radarBars];
 }
 -(void)setupSpots:(NSArray*)spots
 {
@@ -177,11 +178,11 @@
 
 #pragma mark - Moving the radar scanner
 
-
+#define RADIANS( degrees )      ((degrees)*(M_PI/180))
 - (void)moveDots:(int)angle
 {
-    //self.transform = CGAffineTransformMakeRotation(-RADIANS(angle));
-    //radarBars.transform = CGAffineTransformMakeRotation(RADIANS(angle));
+    self.transform = CGAffineTransformMakeRotation(-RADIANS(angle));
+    radarBars.transform = CGAffineTransformMakeRotation(RADIANS(angle));
 }
 
 

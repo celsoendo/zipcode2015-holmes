@@ -49,7 +49,7 @@ extern NSString *test;
 
 -(void)viewDidAppear:(BOOL)animated
 {
-    if (test != @"") {
+    if (![test  isEqual: @""]) {
 //        [self performSegueWithIdentifier:@"getDetail" sender:self];
 
         HousingInformationViewController *destinationVC = [[HousingInformationViewController alloc] init];
@@ -79,7 +79,6 @@ extern NSString *test;
     
     //create the url to call
     NSString *APIstring = [NSString stringWithFormat:@"https://zipcode-rece.c9users.io:8080/api/listings?lat=%f&lon=%f", myLat, myLng];
-    NSLog(APIstring);
     NSURL *infoURL = [[NSURL alloc] initWithString:APIstring];
     NSURLRequest *infoRequest = [[NSURLRequest alloc] initWithURL:infoURL];
     [NSURLConnection sendAsynchronousRequest:infoRequest queue:[[NSOperationQueue alloc]init] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
@@ -115,9 +114,8 @@ extern NSString *test;
         NSDictionary* thisLocation = [locations objectAtIndex:i];
         
         // Storing into property manager model
+    
         
-        
-        NSString* title = [thisLocation objectForKey:@"baths"];
         NSString* subtitle = [thisLocation objectForKey:@"address"];
         NSArray* coordinates = [thisLocation objectForKey:@"coordinates"];
         NSString* uID = [thisLocation objectForKey:@"id"];
