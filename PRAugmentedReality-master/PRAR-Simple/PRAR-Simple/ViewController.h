@@ -12,6 +12,8 @@
 @interface ViewController : UIViewController <PRARManagerDelegate>
 {
     IBOutlet UIView *loadingV;
+    double myLat;
+    double myLng;
 }
 
 @end

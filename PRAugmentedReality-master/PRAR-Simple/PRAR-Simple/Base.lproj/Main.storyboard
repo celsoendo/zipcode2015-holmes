@@ -51,7 +51,7 @@
         <!--HouseInfo-->
         <scene sceneID="UwK-tm-Ibv">
             <objects>
-                <viewController storyboardIdentifier="HouseInfo" title="HouseInfo" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3HV-w7-27b" customClass="HousingInformationViewController" customModule="PRAR_Simple" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HouseInfo" title="HouseInfo" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3HV-w7-27b" customClass="HousingInformationViewController" customModule="Holmes" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eAc-4O-UE3"/>
                         <viewControllerLayoutGuide type="bottom" id="ZBZ-2F-hbK"/>
@@ -77,7 +77,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HousingInformationViewCell" id="kNo-N2-kBc" customClass="HousingInformationViewCell" customModule="PRAR_Simple" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HousingInformationViewCell" id="kNo-N2-kBc" customClass="HousingInformationViewCell" customModule="Holmes" customModuleProvider="target">
                                         <rect key="frame" x="-6" y="0.0" width="339" height="67"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -85,14 +85,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Placeholder" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="l4s-nZ-4kw">
-                                                    <rect key="frame" x="26" y="8" width="138" height="51"/>
+                                                    <rect key="frame" x="26" y="0.0" width="138" height="67"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LxY-Db-RKZ">
-                                                    <rect key="frame" x="151" y="9" width="164" height="50"/>
+                                                    <rect key="frame" x="151" y="0.0" width="164" height="67"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -111,10 +111,10 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="house.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PnP-oJ-9Na">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sf_house" translatesAutoresizingMaskIntoConstraints="NO" id="PnP-oJ-9Na">
                                 <rect key="frame" x="0.0" y="25" width="327" height="219"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.92156862750000001" green="0.49803921569999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
                         </subviews>
                         <animations/>
@@ -154,7 +154,7 @@
     </scenes>
     <resources>
         <image name="LoadingBack" width="200" height="200"/>
-        <image name="house.jpg" width="300" height="225"/>
+        <image name="sf_house" width="1024" height="786"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="R6e-lS-Vhq"/>

@@ -74,8 +74,8 @@ extern NSString *test;
     locationManager.distanceFilter = kCLDistanceFilterNone;
     locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
     [locationManager startUpdatingLocation];
-    double myLat = 33.424303; //locationManager.location.coordinate.latitude;
-    double myLng = -111.929040; //locationManager.location.coordinate.longitude;
+    myLat = 37.7835830;//locationManager.location.coordinate.latitude;
+    myLng = -122.3899070;//locationManager.location.coordinate.longitude;
     
     //create the url to call
     NSString *APIstring = [NSString stringWithFormat:@"https://zipcode-rece.c9users.io:8080/api/listings?lat=%f&lon=%f", myLat, myLng];
@@ -155,7 +155,8 @@ extern NSString *test;
 //        NSLog(@"added a nearBy location");
 //    }
     
-    CLLocationCoordinate2D locationCoordinates = CLLocationCoordinate2DMake(33.424303, -111.929040);
+    
+    CLLocationCoordinate2D locationCoordinates = CLLocationCoordinate2DMake(myLat, myLng);
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.prARManager startARWithData:[NSArray arrayWithArray:points] forLocation:locationCoordinates];
     });

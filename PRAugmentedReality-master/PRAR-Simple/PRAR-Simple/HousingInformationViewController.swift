@@ -22,14 +22,17 @@ class HousingInformationViewController: UIViewController, UICollectionViewDelega
         "garageSpaces",
         "originalPrice",
         "ownership",
+        "yearBuilt",
+        "stories",
         "squareFootage",
         "type",
+        "daysOnMarket",
         "price",
     ]
     
     
     
-    let totalCellCount = 9
+    let totalCellCount = 12
     var global_uid: String!
     var apiData: NSDictionary!
 //    var dataSet : 
@@ -97,7 +100,7 @@ class HousingInformationViewController: UIViewController, UICollectionViewDelega
         return (_label, _value)
     }
     func setUpImage() {
-//        let newImageOfHouse = UIImageView(frame: CGRect(x: 0, y: 25, width: 327, height: 219))
+        let newImageOfHouse = UIImageView(frame: CGRect(x: 0, y: 25, width: 327, height: 219))
 //        if let _ = self.apiData["media"] {
 //            print ("IMAGE UNAVAILABLE")
 //            return
@@ -139,24 +142,27 @@ class HousingInformationViewController: UIViewController, UICollectionViewDelega
     }
     
     func setUpBothButtons() {
-        let navigationView = UIButton(frame: CGRect(x: 227, y: 489, width: 60, height: 60))
+        let navigationView = UIButton(frame: CGRect(x: 217, y: 489, width: 60, height: 60))
         navigationView.setImage(UIImage(named: "navigation12"), forState: .Normal)
         navigationView.addTarget(self, action: "navigationButtonPressed", forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(navigationView)
         
-        let contactView = UIButton(frame: CGRect(x: 50, y: 489, width: 60, height: 60))
+        let contactView = UIButton(frame: CGRect(x: 45, y: 489, width: 60, height: 60))
         contactView.setImage(UIImage(named: "phone325"), forState: .Normal)
         contactView.addTarget(self, action: "contactButtonPressed", forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(contactView)
     }
     
     func navigationButtonPressed() {
-        let stringURL = "http://maps.apple.com/?q=" + (self.apiData["county"] as! String)
+        let stringURL = "http://maps.apple.com/?sll=" + (String(self.apiData["coordinates"]![1])) + "," + (String(self.apiData["coordinates"]![0]))
         let targetURL = NSURL(string: stringURL)
         UIApplication.sharedApplication().openURL(targetURL!)
     }
     
     func contactButtonPressed() {
-        
+        let agentPhone = "6505578509"
+        if let url = NSURL(string: "tel://\(agentPhone)") {
+            UIApplication.sharedApplication().openURL(url)
+        }
     }
 }
