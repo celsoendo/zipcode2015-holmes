@@ -46,4 +46,19 @@
 .delay2 {
   animation-delay: 0.3s; }
 
+.holmes {
+  font-family: "Fredoka One", cursive; }
+  .holmes span:first-of-type {
+    color: #a0c5e6; }
+  .holmes span:nth-of-type(2) {
+    color: #de6768; }
+  .holmes span:nth-of-type(3) {
+    color: #a0c5e6; }
+  .holmes span:nth-of-type(4) {
+    color: #f4b171; }
+  .holmes span:nth-of-type(5) {
+    color: #94c380; }
+  .holmes span:nth-of-type(6) {
+    color: #a0c5e6; }
+
 /*# sourceMappingURL=style.css.map */
