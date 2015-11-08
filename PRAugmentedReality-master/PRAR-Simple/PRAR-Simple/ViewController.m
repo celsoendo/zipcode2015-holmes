@@ -107,6 +107,7 @@ extern int test;
     NSLog(@"LOCATIONS COUNT: %lu",(unsigned long)[locations count]);
     for(int i = 0; i < [locations count]; i ++) {
         NSDictionary* thisLocation = [locations objectAtIndex:i];
+        
         NSString* title = [thisLocation objectForKey:@"baths"];
         NSString* subtitle = [thisLocation objectForKey:@"address"];
         NSArray* coordinates = [thisLocation objectForKey:@"coordinates"];
@@ -119,7 +120,7 @@ extern int test;
         //                                                       ]];
         NSDictionary *point = @{
                                 @"id" : @(i),
-                                @"title" : [NSString stringWithFormat:@"Place Num %d", i],
+                                @"title" : [NSString stringWithFormat:@"%@", subtitle],
                                 @"lon" : @(lng),
                                 @"lat" : @(lat)
                                 };

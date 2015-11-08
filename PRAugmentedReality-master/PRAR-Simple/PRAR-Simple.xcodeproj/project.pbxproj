@@ -38,6 +38,7 @@
 		4178AF6D1BEF195800ABDEFA /* HousingInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4178AF6C1BEF195800ABDEFA /* HousingInformationViewController.swift */; };
 		41A995091BEF307F00D42195 /* ARObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A995081BEF307F00D42195 /* ARObjectView.swift */; };
 		41A9950D1BEF37F700D42195 /* Global.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A9950C1BEF37F700D42195 /* Global.m */; };
+		41A9950F1BEF3C4600D42195 /* PropertyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A9950E1BEF3C4600D42195 /* PropertyModel.swift */; };
 		98C362FB1BEF14570001E46A /* ARObject.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98C362FA1BEF14570001E46A /* ARObject.xib */; };
 		98C363011BEF17CD0001E46A /* icon@1.png in Resources */ = {isa = PBXBuildFile; fileRef = 98C362FE1BEF17CD0001E46A /* icon@1.png */; };
 		98C363021BEF17CD0001E46A /* icon@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 98C362FF1BEF17CD0001E46A /* icon@2.png */; };
@@ -98,6 +99,7 @@
 		4178AF6C1BEF195800ABDEFA /* HousingInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousingInformationViewController.swift; sourceTree = "<group>"; };
 		41A995081BEF307F00D42195 /* ARObjectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARObjectView.swift; sourceTree = "<group>"; };
 		41A9950C1BEF37F700D42195 /* Global.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Global.m; path = ../Global.m; sourceTree = "<group>"; };
+		41A9950E1BEF3C4600D42195 /* PropertyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyModel.swift; sourceTree = "<group>"; };
 		98C362FA1BEF14570001E46A /* ARObject.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ARObject.xib; sourceTree = "<group>"; };
 		98C362FE1BEF17CD0001E46A /* icon@1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@1.png"; sourceTree = "<group>"; };
 		98C362FF1BEF17CD0001E46A /* icon@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2.png"; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				4178AF6E1BEF1AE200ABDEFA /* HousingInformation */,
 				36CB213818E480E7000483F2 /* ViewController.h */,
 				36CB213918E480E7000483F2 /* ViewController.m */,
+				41A9950E1BEF3C4600D42195 /* PropertyModel.swift */,
 				36CB216318E48338000483F2 /* Media.xcassets */,
 				36CB218918E49992000483F2 /* Classes */,
 				36CB212A18E480E7000483F2 /* Supporting Files */,
@@ -394,6 +397,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41A9950F1BEF3C4600D42195 /* PropertyModel.swift in Sources */,
 				41A9950D1BEF37F700D42195 /* Global.m in Sources */,
 				36CB21AA18E49992000483F2 /* PRARManager.m in Sources */,
 				36CB21A018E49992000483F2 /* ARObject.m in Sources */,
