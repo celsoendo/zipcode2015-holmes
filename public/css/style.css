@@ -1,8 +1,8 @@
 .bar, .rec1, .rec2, .rec3, .rec4, .rec5-1, .rec5-2, .rec6-1, .rec6-2, .rec7-1, .rec7-2 {
-  border-radius: 10px;
-  height: 20px;
+  border-radius: 20px;
+  height: 40px;
   margin: 0 auto;
-  margin-bottom: 5px; }
+  margin-bottom: 10px; }
 
 .doorLeft, .rec5-1, .rec6-1, .rec7-1 {
   width: 281.25px;
@@ -39,5 +39,11 @@
 
 .rec4 {
   width: 500px; }
+
+.delay1 {
+  animation-delay: 0.2s; }
+
+.delay2 {
+  animation-delay: 0.3s; }
 
 /*# sourceMappingURL=style.css.map */
