@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 
 @implementation AppDelegate
-
+int test = 0;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.

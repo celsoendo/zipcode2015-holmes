@@ -6,4 +6,10 @@
 //  Copyright © 2015 GeoffroyLesage. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class HousingInformationViewController: UIViewController {
+    override func viewDidLoad() {
+        self.view.backgroundColor = UIColor.blueColor()
+    }
+}

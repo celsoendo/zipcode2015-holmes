@@ -36,30 +36,36 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="EX5-3W-4bH"/>
                     <connections>
                         <outlet property="loadingV" destination="Iem-LV-boE" id="h0h-nD-erm"/>
+                        <segue destination="3HV-w7-27b" kind="push" identifier="getDetail" id="Xn8-Jp-Z04"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Housing Information View Controller-->
         <scene sceneID="UwK-tm-Ibv">
             <objects>
-                <viewController id="3HV-w7-27b" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="house" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3HV-w7-27b" customClass="HousingInformationViewController" customModule="PRAR_Simple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eAc-4O-UE3"/>
                         <viewControllerLayoutGuide type="bottom" id="ZBZ-2F-hbK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Xhr-3j-J1H">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="335" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Tv2-FL-BTY"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="335" height="568"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qS9-k1-xdY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="945.5" y="397"/>
         </scene>
     </scenes>
     <resources>

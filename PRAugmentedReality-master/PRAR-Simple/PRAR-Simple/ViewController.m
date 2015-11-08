@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "PRAR_Simple-Swift.h"
+#import "AppDelegate.h"
 
 #include <stdlib.h>
 
@@ -15,14 +17,13 @@
 
 
 @interface ViewController ()
-
+extern int test;
 @property (nonatomic, strong) PRARManager *prARManager;
 
 @end
 
 
 @implementation ViewController
-
 
 - (void)alert:(NSString*)title withDetails:(NSString*)details {
     
@@ -44,11 +45,22 @@
 
 -(void)viewDidAppear:(BOOL)animated
 {
+    if (test > 0) {
+//        [self performSegueWithIdentifier:@"getDetail" sender:self];
+        test = 0;
+        HousingInformationViewController *destinationVC = [[HousingInformationViewController alloc] init];
+        [self presentViewController:destinationVC animated:true completion:nil];
+    } else {
+        [self getLocations];
+        test += 1;
+    }
+    
+    
     // Initialize your current location as 0,0 (since it works with our randomly generated locations)
     CLLocationCoordinate2D locationCoordinates = CLLocationCoordinate2DMake(0, 0);
     
 
-    [self getLocations];
+
 //    [self.prARManager startARWithData:[self getDummyData] forLocation:locationCoordinates];
 
 }
