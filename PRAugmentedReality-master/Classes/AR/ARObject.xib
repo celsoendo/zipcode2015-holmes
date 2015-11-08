@@ -17,7 +17,7 @@
             <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="ar_overlay_blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="218">
+                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="spatial" image="pill" translatesAutoresizingMaskIntoConstraints="NO" id="218">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
                     <animations/>
                 </imageView>
@@ -63,6 +63,6 @@
         </view>
     </objects>
     <resources>
-        <image name="ar_overlay_blue.png" width="678" height="160"/>
+        <image name="pill" width="339" height="80"/>
     </resources>
 </document>
