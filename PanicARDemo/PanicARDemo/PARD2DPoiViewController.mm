@@ -292,7 +292,7 @@ bool _areOptionsVisible = false;
     switch (buttonIndex) {
         case 0:
             // remove the Objects in the Controller
-            [[PARController sharedARController] clearObjects];
+            //[[PARController sharedARController] clearObjects];
             _hasARPoiObjects = NO;
             break;
         case 1:
@@ -331,7 +331,7 @@ bool _areOptionsVisible = false;
 // create a few test poi objects
 - (void)createARPoiObjects {
     // first clear old objects
-    [[PARController sharedARController] clearObjects];
+    //[[PARController sharedARController] clearObjects];
     
     // now create new ones
     id newPoiLabel = nil;
@@ -358,8 +358,9 @@ bool _areOptionsVisible = false;
     locationManager.distanceFilter = kCLDistanceFilterNone;
     locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
     [locationManager startUpdatingLocation];
-    double myLat = locationManager.location.coordinate.latitude;
-    double myLng = locationManager.location.coordinate.longitude;
+    [[PSKSensorManager sharedSensorManager] setFakeLocation:[[CLLocation alloc] initWithLatitude:33.424303f longitude:-111.929040f]];
+    double myLat = 33.424303; //locationManager.location.coordinate.latitude;
+    double myLng = -111.929040; //locationManager.location.coordinate.longitude;
     
     //create the url to call
     NSString *APIstring = [NSString stringWithFormat:@"https://zipcode-rece.c9users.io:8080/api/retsly/listings?lat=%f&lon=%f", myLat, myLng];
@@ -388,20 +389,26 @@ bool _areOptionsVisible = false;
     NSArray* locations = [data objectForKey:@"bundle"];
     
     //replace all objects with our new set of objects
-    [[PARController sharedARController] clearObjects];
+    //[[PARController sharedARController] clearObjects];
     NSLog(@"LOCATIONS COUNT: %lu",(unsigned long)[locations count]);
-    for(NSInteger i = 0; i < [locations count]; i ++) {
+    for(int i = 0; i < 1 /*[locations count]*/; i ++) {
         NSDictionary* thisLocation = [locations objectAtIndex:i];
         NSString* title = [thisLocation objectForKey:@"baths"];
         NSString* subtitle = [thisLocation objectForKey:@"address"];
         NSArray* coordinates = [thisLocation objectForKey:@"coordinates"];
-        double lat = [[coordinates objectAtIndex:0] doubleValue];
-        double lng = [[coordinates objectAtIndex:1] doubleValue];
+        CLLocationDegrees lat = [[coordinates objectAtIndex:1] doubleValue];
+        CLLocationDegrees lng = [[coordinates objectAtIndex:0] doubleValue];
         
         [[PARController sharedARController] addObject:[[poiLabelClass alloc] initWithTitle:title
                                                                             theDescription:subtitle
                                                                                 atLocation:[[CLLocation alloc] initWithLatitude:lat longitude:lng]
                                                        ]];
+        
+        [[PARController sharedARController] addObject:[[poiLabelClass alloc] initWithTitle:@"London"
+                                                                            theDescription:@"United Kingdom"
+                                                                                atLocation:[[CLLocation alloc] initWithLatitude:51.500141 longitude:-0.126257]
+                                                       ]];
+        NSLog(@"added a location");
     }
 }
 
