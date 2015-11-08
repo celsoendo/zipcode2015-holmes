@@ -12,20 +12,32 @@ class HousingInformationViewController: UIViewController, UICollectionViewDelega
     
     @IBOutlet weak var allCheckoutItemTiles: UICollectionView!
     
+    @IBOutlet weak var houseImage: UIImageView!
     @IBOutlet weak var buttonView: UIButton!
     
-    let totalCellCount = 14
+    let labelParams = [
+        "address",
+        "baths",
+        "bedrooms",
+        "garageSpaces",
+        "originalPrice",
+        "ownership",
+        "squareFootage",
+        "type",
+        "price",
+    ]
+    
+    
+    
+    let totalCellCount = 9
     var global_uid: String!
+    var apiData: NSDictionary!
 //    var dataSet : 
     
     override func viewDidLoad() {
-        self.view.backgroundColor = UIColor.yellowColor()
         global_uid = AppDelegate.getGlobalString()
-        allCheckoutItemTiles.delegate = self
-        allCheckoutItemTiles.dataSource = self
-        allCheckoutItemTiles.superview?.backgroundColor = UIColor.whiteColor()
-        
-        AppDelegate.clearGlobalString()
+        doAPIStuff()
+
     }
     
     // Collection View Stuff
@@ -39,7 +51,8 @@ class HousingInformationViewController: UIViewController, UICollectionViewDelega
         
         let cell = allCheckoutItemTiles.dequeueReusableCellWithReuseIdentifier("HousingInformationViewCell", forIndexPath: indexPath) as! HousingInformationViewCell
         cell.backgroundColor = UIColor.grayColor()
-        cell.setUpCell(indexPath.item)
+        // Label & Value
+        cell.setUpCell( getValue(indexPath.item).label ,value: getValue(indexPath.item).value)
         return cell
     }
     
@@ -47,7 +60,50 @@ class HousingInformationViewController: UIViewController, UICollectionViewDelega
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
-//    func getValue(idx: Int) -> (label: String, value: String) {
-//        
-//    }
+    func doAPIStuff() {
+
+        let specificLocationAPI = String(format: "%@%@", "https://zipcode-rece.c9users.io:8080/api/retsly/listing?id=", global_uid)
+        print (specificLocationAPI)
+        let request = NSURLRequest(URL: NSURL(string: specificLocationAPI)!)
+        let indicator = UIActivityIndicatorView(activityIndicatorStyle: .Gray)
+        indicator.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        indicator.center = view.center
+        view.addSubview(indicator)
+        indicator.startAnimating()
+        NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) {(response, data, error) in
+            do {
+                try self.apiData = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments) as! NSDictionary
+                self.allCheckoutItemTiles.reloadData()
+                indicator.stopAnimating()
+                self.allCheckoutItemTiles.delegate = self
+                self.allCheckoutItemTiles.dataSource = self
+                self.allCheckoutItemTiles.reloadData()
+                
+                self.setUpImage()
+            } catch {
+                
+            }
+        }
+        
+    }
+    func getValue(idx: Int) -> (label: String, value: String) {
+        let _label = labelParams[idx]
+        let _value = String(apiData[_label]!)
+        
+        return (_label, _value)
+    }
+    func setUpImage() {
+        if let _ = self.apiData["media"] {
+            return
+        } else {
+            
+            print (self.apiData["media"]![0]["url"] as! String)
+            
+            if let url = NSURL(string: (self.apiData["media"]![0]["url"] as! String)) {
+                if let data = NSData(contentsOfURL: url) {
+                    self.houseImage.image = UIImage(data: data)
+                }
+            }
+        }
+    }
 }
