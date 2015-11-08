@@ -34,6 +34,7 @@
 		4178AF6D1BEF195800ABDEFA /* HousingInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4178AF6C1BEF195800ABDEFA /* HousingInformationViewController.swift */; };
 		41A995091BEF307F00D42195 /* ARObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A995081BEF307F00D42195 /* ARObjectView.swift */; };
 		41A9950D1BEF37F700D42195 /* Global.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A9950C1BEF37F700D42195 /* Global.m */; };
+		41BC54A31BEFB80500613CC1 /* house.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41BC54A21BEFB80500613CC1 /* house.jpg */; };
 		41EAEB5A1BEF5A4F0075B7B6 /* HousingInformationViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EAEB591BEF5A4F0075B7B6 /* HousingInformationViewCell.swift */; };
 		81D67E531BEF47B800832D38 /* pill.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81D67E521BEF47B800832D38 /* pill.xcassets */; };
 		98A03FB41BEF7BA3001B0748 /* Compas.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A03FB31BEF7BA3001B0748 /* Compas.png */; };
@@ -97,6 +98,7 @@
 		41A995081BEF307F00D42195 /* ARObjectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARObjectView.swift; sourceTree = "<group>"; };
 		41A9950C1BEF37F700D42195 /* Global.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Global.m; path = ../Global.m; sourceTree = "<group>"; };
 		41A9950E1BEF3C4600D42195 /* PropertyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyModel.swift; sourceTree = "<group>"; };
+		41BC54A21BEFB80500613CC1 /* house.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = house.jpg; sourceTree = "<group>"; };
 		41EAEB591BEF5A4F0075B7B6 /* HousingInformationViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousingInformationViewCell.swift; sourceTree = "<group>"; };
 		81D67E481BEF3DA300832D38 /* ar_overlay_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ar_overlay_blue.png; sourceTree = "<group>"; };
 		81D67E491BEF3DA300832D38 /* ar_overlay_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ar_overlay_green.png; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				81D67E481BEF3DA300832D38 /* ar_overlay_blue.png */,
+				41BC54A21BEFB80500613CC1 /* house.jpg */,
 				81D67E491BEF3DA300832D38 /* ar_overlay_green.png */,
 				81D67E4A1BEF3DA300832D38 /* ar_overlay_orange.png */,
 				81D67E4B1BEF3DA300832D38 /* ar_overlay_red.png */,
@@ -345,7 +348,7 @@
 				ORGANIZATIONNAME = GeoffroyLesage;
 				TargetAttributes = {
 					36CB211F18E480E7000483F2 = {
-						DevelopmentTeam = 4TL9CF482Q;
+						DevelopmentTeam = 3SST48GYDF;
 					};
 					36CB214018E480E8000483F2 = {
 						TestTargetID = 36CB211F18E480E7000483F2;
@@ -386,6 +389,7 @@
 				36CB218618E490B8000483F2 /* LoadingBack.png in Resources */,
 				98A03FBA1BEF806E001B0748 /* launch.png in Resources */,
 				98C363031BEF17CD0001E46A /* icon@3.png in Resources */,
+				41BC54A31BEFB80500613CC1 /* house.jpg in Resources */,
 				98A03FB41BEF7BA3001B0748 /* Compas.png in Resources */,
 				36CB218418E4861B000483F2 /* launchR4.png in Resources */,
 				36CB213718E480E7000483F2 /* Main.storyboard in Resources */,
@@ -554,7 +558,7 @@
 				GCC_PREFIX_HEADER = "PRAR-Simple/PRAR-Simple-Prefix.pch";
 				INFOPLIST_FILE = "PRAR-Simple/PRAR-Simple-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jjindgrong.zipcode;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jjingrong.zipcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PRAR-Simple/PRAR-Simple-Bridging-Header.h";
@@ -575,7 +579,7 @@
 				GCC_PREFIX_HEADER = "PRAR-Simple/PRAR-Simple-Prefix.pch";
 				INFOPLIST_FILE = "PRAR-Simple/PRAR-Simple-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jjindgrong.zipcode;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jjingrong.zipcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PRAR-Simple/PRAR-Simple-Bridging-Header.h";

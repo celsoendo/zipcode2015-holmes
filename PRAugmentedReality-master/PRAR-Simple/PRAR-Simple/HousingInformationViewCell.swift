@@ -14,7 +14,7 @@ class HousingInformationViewCell: UICollectionViewCell {
     @IBOutlet weak var attributeValue: UILabel!
     
     func setUpCell(label: String, value: String) {
-        self.attributeLabel.text = label
+        self.attributeLabel.text = label.capitalizedString
         self.attributeValue.text = value
     }
 }

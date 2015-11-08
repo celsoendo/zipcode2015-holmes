@@ -50,9 +50,11 @@ class HousingInformationViewController: UIViewController, UICollectionViewDelega
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
         let cell = allCheckoutItemTiles.dequeueReusableCellWithReuseIdentifier("HousingInformationViewCell", forIndexPath: indexPath) as! HousingInformationViewCell
-        cell.backgroundColor = UIColor.grayColor()
+        cell.backgroundColor = self.getFunColors(indexPath.item)
+        
         // Label & Value
         cell.setUpCell( getValue(indexPath.item).label ,value: getValue(indexPath.item).value)
+
         return cell
     }
     
@@ -73,13 +75,14 @@ class HousingInformationViewController: UIViewController, UICollectionViewDelega
         NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) {(response, data, error) in
             do {
                 try self.apiData = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments) as! NSDictionary
-                self.allCheckoutItemTiles.reloadData()
-                indicator.stopAnimating()
-                self.allCheckoutItemTiles.delegate = self
-                self.allCheckoutItemTiles.dataSource = self
-                self.allCheckoutItemTiles.reloadData()
-                
+                if let _ = self.allCheckoutItemTiles {
+                    indicator.stopAnimating()
+                    self.allCheckoutItemTiles.delegate = self
+                    self.allCheckoutItemTiles.dataSource = self
+//                    self.allCheckoutItemTiles.reloadData()
+                }
                 self.setUpImage()
+                AppDelegate.clearGlobalString()
             } catch {
                 
             }
@@ -93,17 +96,46 @@ class HousingInformationViewController: UIViewController, UICollectionViewDelega
         return (_label, _value)
     }
     func setUpImage() {
-        if let _ = self.apiData["media"] {
-            return
-        } else {
-            
-            print (self.apiData["media"]![0]["url"] as! String)
-            
-            if let url = NSURL(string: (self.apiData["media"]![0]["url"] as! String)) {
-                if let data = NSData(contentsOfURL: url) {
-                    self.houseImage.image = UIImage(data: data)
-                }
-            }
-        }
+//        self.houseImage.image = UIImage(named: "house.jpg")
+//        if let _ = self.apiData["media"] {
+//            print ("IMAGE UNAVAILABLE")
+//            return
+//        } else {
+//            
+//            print (self.apiData["media"]![0]["url"] as! String)
+//            
+//            if let url = NSURL(string: (self.apiData["media"]![0]["url"] as! String)) {
+//                if let data = NSData(contentsOfURL: url) {
+//                    self.houseImage.image = UIImage(data: data)
+//                }
+//            }
+//        }
+//        let urlString = "https://s3.amazonaws.com/retsly_images_production/armls/20150528203134338311000000/1.jpg"
+//        dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
+//            if let test =  UIImage(data: NSData(contentsOfURL: NSURL(string:urlString)!)!) {
+//                self.houseImage.image = test                
+//            }
+//
+//        })
+    }
+    
+    private func getFunColors(idx: Int) -> UIColor {
+        let arrayOfColors = ["A0C5E6 ","DE6768 ","F4B171 ","94C380 "]
+        let currentElementIdx = idx % 4
+        let currentColor = UIColorFromRGB(arrayOfColors[currentElementIdx], alpha: 1.0)
+        return currentColor
+        
+    }
+    func UIColorFromRGB(colorCode: String, alpha: Float = 1.0) -> UIColor{
+        var scanner = NSScanner(string:colorCode)
+        var color:UInt32 = 0;
+        scanner.scanHexInt(&color)
+        
+        let mask = 0x000000FF
+        let r = CGFloat(Float(Int(color >> 16) & mask)/255.0)
+        let g = CGFloat(Float(Int(color >> 8) & mask)/255.0)
+        let b = CGFloat(Float(Int(color) & mask)/255.0)
+        
+        return UIColor(red: r, green: g, blue: b, alpha: CGFloat(alpha))
     }
 }
