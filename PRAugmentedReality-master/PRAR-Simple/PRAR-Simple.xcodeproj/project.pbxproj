@@ -21,20 +21,11 @@
 		36CB214D18E480E8000483F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36CB214B18E480E8000483F2 /* InfoPlist.strings */; };
 		36CB214F18E480E8000483F2 /* PRAR_SimpleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CB214E18E480E8000483F2 /* PRAR_SimpleTests.m */; };
 		36CB216418E48338000483F2 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36CB216318E48338000483F2 /* Media.xcassets */; };
-		36CB216C18E483C6000483F2 /* logo29.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CB216518E483C6000483F2 /* logo29.png */; };
-		36CB216D18E483C6000483F2 /* logo40.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CB216618E483C6000483F2 /* logo40.png */; };
-		36CB216F18E483C6000483F2 /* logo57.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CB216818E483C6000483F2 /* logo57.png */; };
-		36CB217018E483C6000483F2 /* logo60.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CB216918E483C6000483F2 /* logo60.png */; };
-		36CB217818E48447000483F2 /* logo58.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CB217318E48447000483F2 /* logo58.png */; };
-		36CB217918E48447000483F2 /* logo80.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CB217418E48447000483F2 /* logo80.png */; };
-		36CB217A18E48447000483F2 /* logo114.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CB217518E48447000483F2 /* logo114.png */; };
-		36CB217B18E48447000483F2 /* logo120.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CB217618E48447000483F2 /* logo120.png */; };
 		36CB218318E4861B000483F2 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CB218118E4861B000483F2 /* launch.png */; };
 		36CB218418E4861B000483F2 /* launchR4.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CB218218E4861B000483F2 /* launchR4.png */; };
 		36CB218618E490B8000483F2 /* LoadingBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CB218518E490B8000483F2 /* LoadingBack.png */; };
 		36CB219F18E49992000483F2 /* ARController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CB218C18E49992000483F2 /* ARController.m */; };
 		36CB21A018E49992000483F2 /* ARObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CB218E18E49992000483F2 /* ARObject.m */; };
-		36CB21A118E49992000483F2 /* ARObject.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36CB218F18E49992000483F2 /* ARObject.xib */; };
 		36CB21A218E49992000483F2 /* ar_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CB219218E49992000483F2 /* ar_icon.png */; };
 		36CB21A318E49992000483F2 /* ar_overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CB219318E49992000483F2 /* ar_overlay.png */; };
 		36CB21A418E49992000483F2 /* ar_overlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CB219418E49992000483F2 /* ar_overlay@2x.png */; };
@@ -44,6 +35,10 @@
 		36CB21A818E49992000483F2 /* ARRadar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36CB219A18E49992000483F2 /* ARRadar.xib */; };
 		36CB21A918E49992000483F2 /* LocationMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CB219C18E49992000483F2 /* LocationMath.m */; };
 		36CB21AA18E49992000483F2 /* PRARManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CB219E18E49992000483F2 /* PRARManager.m */; };
+		98C362F71BEF0F650001E46A /* icon@3.png in Resources */ = {isa = PBXBuildFile; fileRef = 98C362F41BEF0F650001E46A /* icon@3.png */; };
+		98C362F81BEF0F650001E46A /* icon@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 98C362F51BEF0F650001E46A /* icon@2.png */; };
+		98C362F91BEF0F650001E46A /* icon@1.png in Resources */ = {isa = PBXBuildFile; fileRef = 98C362F61BEF0F650001E46A /* icon@1.png */; };
+		98C362FB1BEF14570001E46A /* ARObject.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98C362FA1BEF14570001E46A /* ARObject.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,14 +71,6 @@
 		36CB214C18E480E8000483F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		36CB214E18E480E8000483F2 /* PRAR_SimpleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRAR_SimpleTests.m; sourceTree = "<group>"; };
 		36CB216318E48338000483F2 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
-		36CB216518E483C6000483F2 /* logo29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo29.png; sourceTree = "<group>"; };
-		36CB216618E483C6000483F2 /* logo40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo40.png; sourceTree = "<group>"; };
-		36CB216818E483C6000483F2 /* logo57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo57.png; sourceTree = "<group>"; };
-		36CB216918E483C6000483F2 /* logo60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo60.png; sourceTree = "<group>"; };
-		36CB217318E48447000483F2 /* logo58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo58.png; sourceTree = "<group>"; };
-		36CB217418E48447000483F2 /* logo80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo80.png; sourceTree = "<group>"; };
-		36CB217518E48447000483F2 /* logo114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo114.png; sourceTree = "<group>"; };
-		36CB217618E48447000483F2 /* logo120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo120.png; sourceTree = "<group>"; };
 		36CB218118E4861B000483F2 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
 		36CB218218E4861B000483F2 /* launchR4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchR4.png; sourceTree = "<group>"; };
 		36CB218518E490B8000483F2 /* LoadingBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoadingBack.png; sourceTree = "<group>"; };
@@ -91,7 +78,6 @@
 		36CB218C18E49992000483F2 /* ARController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARController.m; sourceTree = "<group>"; };
 		36CB218D18E49992000483F2 /* ARObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARObject.h; sourceTree = "<group>"; };
 		36CB218E18E49992000483F2 /* ARObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARObject.m; sourceTree = "<group>"; };
-		36CB218F18E49992000483F2 /* ARObject.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ARObject.xib; sourceTree = "<group>"; };
 		36CB219018E49992000483F2 /* ARSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARSettings.h; sourceTree = "<group>"; };
 		36CB219218E49992000483F2 /* ar_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ar_icon.png; sourceTree = "<group>"; };
 		36CB219318E49992000483F2 /* ar_overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ar_overlay.png; sourceTree = "<group>"; };
@@ -105,6 +91,10 @@
 		36CB219C18E49992000483F2 /* LocationMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationMath.m; sourceTree = "<group>"; };
 		36CB219D18E49992000483F2 /* PRARManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRARManager.h; sourceTree = "<group>"; };
 		36CB219E18E49992000483F2 /* PRARManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRARManager.m; sourceTree = "<group>"; };
+		98C362F41BEF0F650001E46A /* icon@3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@3.png"; path = "../../../../../../Desktop/icon@3.png"; sourceTree = "<group>"; };
+		98C362F51BEF0F650001E46A /* icon@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2.png"; path = "../../../../../../Desktop/icon@2.png"; sourceTree = "<group>"; };
+		98C362F61BEF0F650001E46A /* icon@1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@1.png"; path = "../../../../../../Desktop/icon@1.png"; sourceTree = "<group>"; };
+		98C362FA1BEF14570001E46A /* ARObject.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ARObject.xib; sourceTree = "<group>"; };
 		CB23E47C42D742E9A50498CB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -211,15 +201,10 @@
 		36CB215818E481B2000483F2 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				98C362F41BEF0F650001E46A /* icon@3.png */,
+				98C362F51BEF0F650001E46A /* icon@2.png */,
+				98C362F61BEF0F650001E46A /* icon@1.png */,
 				36CB218518E490B8000483F2 /* LoadingBack.png */,
-				36CB216518E483C6000483F2 /* logo29.png */,
-				36CB216618E483C6000483F2 /* logo40.png */,
-				36CB216818E483C6000483F2 /* logo57.png */,
-				36CB217318E48447000483F2 /* logo58.png */,
-				36CB216918E483C6000483F2 /* logo60.png */,
-				36CB217418E48447000483F2 /* logo80.png */,
-				36CB217518E48447000483F2 /* logo114.png */,
-				36CB217618E48447000483F2 /* logo120.png */,
 				36CB218118E4861B000483F2 /* launch.png */,
 				36CB218218E4861B000483F2 /* launchR4.png */,
 			);
@@ -243,11 +228,11 @@
 		36CB218A18E49992000483F2 /* AR */ = {
 			isa = PBXGroup;
 			children = (
+				98C362FA1BEF14570001E46A /* ARObject.xib */,
 				36CB218B18E49992000483F2 /* ARController.h */,
 				36CB218C18E49992000483F2 /* ARController.m */,
 				36CB218D18E49992000483F2 /* ARObject.h */,
 				36CB218E18E49992000483F2 /* ARObject.m */,
-				36CB218F18E49992000483F2 /* ARObject.xib */,
 			);
 			path = AR;
 			sourceTree = "<group>";
@@ -324,7 +309,7 @@
 				ORGANIZATIONNAME = GeoffroyLesage;
 				TargetAttributes = {
 					36CB211F18E480E7000483F2 = {
-						DevelopmentTeam = 3SST48GYDF;
+						DevelopmentTeam = 4TL9CF482Q;
 					};
 					36CB214018E480E8000483F2 = {
 						TestTargetID = 36CB211F18E480E7000483F2;
@@ -357,25 +342,20 @@
 			files = (
 				36CB21A418E49992000483F2 /* ar_overlay@2x.png in Resources */,
 				36CB218318E4861B000483F2 /* launch.png in Resources */,
-				36CB217A18E48447000483F2 /* logo114.png in Resources */,
-				36CB217B18E48447000483F2 /* logo120.png in Resources */,
-				36CB216F18E483C6000483F2 /* logo57.png in Resources */,
 				36CB212E18E480E7000483F2 /* InfoPlist.strings in Resources */,
 				36CB21A818E49992000483F2 /* ARRadar.xib in Resources */,
-				36CB217818E48447000483F2 /* logo58.png in Resources */,
-				36CB216C18E483C6000483F2 /* logo29.png in Resources */,
-				36CB216D18E483C6000483F2 /* logo40.png in Resources */,
-				36CB217918E48447000483F2 /* logo80.png in Resources */,
 				36CB21A218E49992000483F2 /* ar_icon.png in Resources */,
-				36CB21A118E49992000483F2 /* ARObject.xib in Resources */,
-				36CB217018E483C6000483F2 /* logo60.png in Resources */,
 				36CB216418E48338000483F2 /* Media.xcassets in Resources */,
+				98C362F91BEF0F650001E46A /* icon@1.png in Resources */,
+				98C362FB1BEF14570001E46A /* ARObject.xib in Resources */,
 				36CB218618E490B8000483F2 /* LoadingBack.png in Resources */,
 				36CB21A518E49992000483F2 /* Radar.png in Resources */,
 				36CB218418E4861B000483F2 /* launchR4.png in Resources */,
 				36CB21A318E49992000483F2 /* ar_overlay.png in Resources */,
 				36CB213718E480E7000483F2 /* Main.storyboard in Resources */,
 				36CB21A618E49992000483F2 /* RadarMV.png in Resources */,
+				98C362F71BEF0F650001E46A /* icon@3.png in Resources */,
+				98C362F81BEF0F650001E46A /* icon@2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,7 +511,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PRAR-Simple/PRAR-Simple-Prefix.pch";
 				INFOPLIST_FILE = "PRAR-Simple/PRAR-Simple-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jingrong.PRAR-Simple";
+				PRODUCT_BUNDLE_IDENTIFIER = com.probitytechnology.zipcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -548,7 +528,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PRAR-Simple/PRAR-Simple-Prefix.pch";
 				INFOPLIST_FILE = "PRAR-Simple/PRAR-Simple-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jingrong.PRAR-Simple";
+				PRODUCT_BUNDLE_IDENTIFIER = com.probitytechnology.zipcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ARObject">
@@ -18,11 +19,9 @@
             <subviews>
                 <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="ar_overlay.png" translatesAutoresizingMaskIntoConstraints="NO" id="218">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="6">
-                    <rect key="frame" x="56" y="3" width="155" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <rect key="frame" x="63" y="3" width="155" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="40"/>
                         <constraint firstAttribute="width" constant="155" id="456"/>
@@ -32,8 +31,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="00.0 miles" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="10">
-                    <rect key="frame" x="58" y="25" width="81" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <rect key="frame" x="63" y="25" width="81" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="466"/>
                         <constraint firstAttribute="width" constant="81" id="513"/>
@@ -43,8 +41,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ar_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="87">
-                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <rect key="frame" x="5" y="0.0" width="50" height="50"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="50" id="512"/>
                     </constraints>
@@ -56,13 +53,15 @@
                 <constraint firstItem="87" firstAttribute="top" secondItem="1" secondAttribute="top" id="254"/>
                 <constraint firstItem="218" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="428"/>
                 <constraint firstItem="218" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="429"/>
-                <constraint firstItem="6" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="56" id="434"/>
-                <constraint firstItem="87" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="462"/>
+                <constraint firstItem="6" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="63" id="434"/>
+                <constraint firstItem="87" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="5" id="462"/>
                 <constraint firstItem="87" firstAttribute="bottom" secondItem="1" secondAttribute="bottom" id="463"/>
                 <constraint firstItem="10" firstAttribute="leading" secondItem="87" secondAttribute="trailing" constant="8" symbolic="YES" id="477"/>
                 <constraint firstItem="6" firstAttribute="top" secondItem="1" secondAttribute="top" constant="3" id="508"/>
                 <constraint firstAttribute="bottom" secondItem="10" secondAttribute="bottom" constant="4" id="511"/>
+                <constraint firstAttribute="trailing" secondItem="87" secondAttribute="trailing" constant="185" id="YGa-y7-Pb0"/>
             </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
