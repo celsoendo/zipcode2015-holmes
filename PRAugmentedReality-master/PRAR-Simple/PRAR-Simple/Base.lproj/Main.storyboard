@@ -32,6 +32,17 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Investigating..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvD-zd-aNE">
+                                <rect key="frame" x="73" y="157" width="174" height="39"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <color key="textColor" red="0.20392156859999999" green="0.59607843140000005" blue="0.85882352939999995" alpha="0.79000000000000004" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="launchR4.png" translatesAutoresizingMaskIntoConstraints="NO" id="KUq-FL-SLM">
+                                <rect key="frame" x="227" y="466" width="60" height="90"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -46,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="403" y="937"/>
+            <point key="canvasLocation" x="400.5" y="826.5"/>
         </scene>
         <!--HouseInfo-->
         <scene sceneID="UwK-tm-Ibv">
@@ -103,7 +114,7 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <animations/>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="attributeLabel" destination="l4s-nZ-4kw" id="Ig9-oK-qP6"/>
                                             <outlet property="attributeValue" destination="LxY-Db-RKZ" id="B5f-9d-vTw"/>
@@ -154,9 +165,10 @@
     </scenes>
     <resources>
         <image name="LoadingBack" width="200" height="200"/>
+        <image name="launchR4.png" width="640" height="1136"/>
         <image name="new_sf_house.jpg" width="1024" height="786"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="R6e-lS-Vhq"/>
+        <segue reference="Xn8-Jp-Z04"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -33,7 +33,6 @@
 		36CB21AA18E49992000483F2 /* PRARManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CB219E18E49992000483F2 /* PRARManager.m */; };
 		4178AF6D1BEF195800ABDEFA /* HousingInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4178AF6C1BEF195800ABDEFA /* HousingInformationViewController.swift */; };
 		41A995091BEF307F00D42195 /* ARObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A995081BEF307F00D42195 /* ARObjectView.swift */; };
-		41A9950D1BEF37F700D42195 /* Global.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A9950C1BEF37F700D42195 /* Global.m */; };
 		41BC54A31BEFB80500613CC1 /* house.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41BC54A21BEFB80500613CC1 /* house.jpg */; };
 		41BC54A51BEFD3D400613CC1 /* new_sf_house.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41BC54A41BEFD3D400613CC1 /* new_sf_house.jpg */; };
 		41EAEB5A1BEF5A4F0075B7B6 /* HousingInformationViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EAEB591BEF5A4F0075B7B6 /* HousingInformationViewCell.swift */; };
@@ -96,7 +95,6 @@
 		4178AF6B1BEF195700ABDEFA /* PRAR-Simple-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PRAR-Simple-Bridging-Header.h"; sourceTree = "<group>"; };
 		4178AF6C1BEF195800ABDEFA /* HousingInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousingInformationViewController.swift; sourceTree = "<group>"; };
 		41A995081BEF307F00D42195 /* ARObjectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARObjectView.swift; sourceTree = "<group>"; };
-		41A9950C1BEF37F700D42195 /* Global.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Global.m; path = ../Global.m; sourceTree = "<group>"; };
 		41A9950E1BEF3C4600D42195 /* PropertyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyModel.swift; sourceTree = "<group>"; };
 		41BC54A21BEFB80500613CC1 /* house.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = house.jpg; sourceTree = "<group>"; };
 		41BC54A41BEFD3D400613CC1 /* new_sf_house.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = new_sf_house.jpg; sourceTree = "<group>"; };
@@ -176,7 +174,6 @@
 		36CB212918E480E7000483F2 /* PRAR-Simple */ = {
 			isa = PBXGroup;
 			children = (
-				41A9950C1BEF37F700D42195 /* Global.m */,
 				36CB213218E480E7000483F2 /* AppDelegate.h */,
 				36CB213318E480E7000483F2 /* AppDelegate.m */,
 				36CB213518E480E7000483F2 /* Main.storyboard */,
@@ -417,7 +414,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41A9950D1BEF37F700D42195 /* Global.m in Sources */,
 				36CB21AA18E49992000483F2 /* PRARManager.m in Sources */,
 				36CB21A018E49992000483F2 /* ARObject.m in Sources */,
 				41A995091BEF307F00D42195 /* ARObjectView.swift in Sources */,
