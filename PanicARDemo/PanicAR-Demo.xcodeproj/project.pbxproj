@@ -252,7 +252,7 @@
 				ORGANIZATIONNAME = "doPanic GmbH";
 				TargetAttributes = {
 					99E57DDC16D7E4720093E85F = {
-						DevelopmentTeam = 3SST48GYDF;
+						DevelopmentTeam = 4TL9CF482Q;
 					};
 				};
 			};
@@ -426,7 +426,7 @@
 				INFOPLIST_FILE = "PanicARDemo/PanicARDemo-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jingong.panicar.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.probitytechnology.zip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PanicARDemo/PanicARDemo-Bridging-Header.h";
@@ -452,7 +452,7 @@
 				INFOPLIST_FILE = "PanicARDemo/PanicARDemo-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jingong.panicar.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.probitytechnology.zip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PanicARDemo/PanicARDemo-Bridging-Header.h";

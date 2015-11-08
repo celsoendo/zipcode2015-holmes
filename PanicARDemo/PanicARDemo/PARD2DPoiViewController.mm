@@ -316,7 +316,6 @@ bool _areOptionsVisible = false;
 
 #pragma mark - PAR Stuff
 
-
 // create a few test poi objects
 - (void)createARPoiObjects {
     // first clear old objects
@@ -332,23 +331,82 @@ bool _areOptionsVisible = false;
     // setup factory to use same class – this is used to create a lot of test labels
     [PARPoiFactory setPoiClass:poiLabelClass];
     
-    // Populating data from Celson's Awesome API
+    // ZIPCODE MARK : Populate marker
     
+    [self getLocations];
     
-    // add a third poi label, this time allocation of a new marker and adding to the PARController are wrapped up in one line
-    
-    [[PARController sharedARController] addObject:[[poiLabelClass alloc] initWithTitle:@"Golden Gate University"
-                                                                        theDescription:@"SF"
-                                                                            atLocation:[[CLLocation alloc] initWithLatitude: 37.7892920 longitude:-122.3989820]
-                                                   ]];
-    
-
-    
-
-    
+    /*
+     // now add a poi (a graphic only - no text)
+     PARPoi* newPoi = nil;
+     newPoi = [[PARPoi alloc] initWithImage:@"DefaultImage"
+     atLocation:[[CLLocation alloc] initWithLatitude:51.500141 longitude:-0.126257]
+     ];
+     newPoi.offset = CGPointMake(0, 0); // use this to move the poi relative to his final position on screen
+     [[PARController sharedARController] addObject:newPoi];
+     
+     // Add another POI, near our Headquarters – display an image on it using a custom PoiLabelTemplate
+     newPoiLabel = [[poiLabelClass alloc] initWithTitle:@"Dom"
+     theDescription:@"Regensburger Dom"
+     theImage:[UIImage imageNamed:@"Icon@2x~ipad"]
+     fromTemplateXib:@"PoiLabelWithImage"
+     atLocation:[[CLLocation alloc] initWithLatitude:49.019512 longitude:12.097709]
+     ];
+     [[PARController sharedARController] addObject:newPoiLabel];
+     */
     NSLog(@"Number of PAR Objects in SharedController: %d", [[PARController sharedARController] numberOfObjects]);
     
-    _hasARPoiObjects = YES;}
+    _hasARPoiObjects = YES;
+}
+
+-(void) getLocations {
+    CLLocation* l = [[self deviceAttitude] location];
+    CLLocationCoordinate2D c = [l coordinate];
+    
+    //create the url to call
+    NSString *APIstring = [NSString stringWithFormat:@"https://zipcode-rece.c9users.io:8080/api/listings?lat=%f&lon=%f", c.latitude, c.longitude];
+    NSLog(APIstring);
+    NSURL *infoURL = [[NSURL alloc] initWithString:APIstring];
+    NSURLRequest *infoRequest = [[NSURLRequest alloc] initWithURL:infoURL];
+    [NSURLConnection sendAsynchronousRequest:infoRequest queue:[[NSOperationQueue alloc]init] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+        
+        //handle sercer response
+        NSError *error= [[NSError alloc] init];
+        if (connectionError!=nil) {
+            NSLog(@"connection error");
+        } else {
+            id object = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+            NSDictionary *results = object;
+            
+            [self parseLocationReturn:results];
+        }
+    }];
+}
+
+-(void) parseLocationReturn:(NSDictionary *)data {
+    
+    Class poiLabelClass = [PARPoiLabel class];
+    
+    NSArray* locations = [data objectForKey:@"bundle"];
+    
+    //replace all objects with our new set of objects
+    [[PARController sharedARController] clearObjects];
+    NSLog(@"LOCATIONS COUNT: %lu",(unsigned long)[locations count]);
+    for(NSInteger i = 0; i < [locations count]; i ++) {
+        NSDictionary* thisLocation = [locations objectAtIndex:i];
+        NSString* title = [thisLocation objectForKey:@"baths"];
+        NSString* subtitle = [thisLocation objectForKey:@"address"];
+        NSArray* coordinates = [thisLocation objectForKey:@"coordinates"];
+        double lat = [[coordinates objectAtIndex:0] doubleValue];
+        double lng = [[coordinates objectAtIndex:1] doubleValue];
+        
+        [[PARController sharedARController] addObject:[[poiLabelClass alloc] initWithTitle:title
+                                                                            theDescription:subtitle
+                                                                                atLocation:[[CLLocation alloc] initWithLatitude:lat longitude:lng]
+                                                       ]];
+        
+        NSLog(@"added a thing to the thing");
+    }
+}
 
 
 
@@ -424,4 +482,6 @@ bool _areOptionsVisible = false;
      UIGraphicsEndImageContext();
      }];
 }
+
+
 @end
