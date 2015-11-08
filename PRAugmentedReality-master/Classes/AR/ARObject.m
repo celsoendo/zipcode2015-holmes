@@ -54,6 +54,10 @@ andCurrentLocation:(CLLocationCoordinate2D)currLoc
         
         [self.view setTag:newId];
     }
+    UITapGestureRecognizer *singleFingerTap =
+    [[UITapGestureRecognizer alloc] initWithTarget:self
+                                            action:@selector(handleSingleTap:)];
+    [self.view addGestureRecognizer:singleFingerTap];
     return self;
 }
 
@@ -102,6 +106,14 @@ andCurrentLocation:(CLLocationCoordinate2D)currLoc
 - (NSString *)description {
     return [NSString stringWithFormat:@"ARObject %d - %@ - lat: %f - lon: %f - distance: %@",
             arId, arTitle, lat, lon, distance];
+}
+
+//The event handling method
+- (void)handleSingleTap:(UITapGestureRecognizer *)recognizer {
+//    CGPoint location = [recognizer locationInView:[recognizer.view superview]];
+    
+    //Do stuff here...
+    NSLog(@"hello");
 }
 
 @end
