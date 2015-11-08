@@ -91,11 +91,12 @@
                         <outletCollection property="infoLabels" destination="aut-E7-wCE" id="8yJ-kS-jMO"/>
                         <outletCollection property="infoLabels" destination="qw7-Lz-r6U" id="IzJ-kh-c7X"/>
                         <outletCollection property="infoLabels" destination="HBQ-e7-Sev" id="l6L-5m-cN7"/>
+                        <segue destination="JN5-8w-qQJ" kind="push" identifier="showPropertyDetails" id="Fae-0E-iWM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="845" y="536"/>
+            <point key="canvasLocation" x="809" y="536"/>
         </scene>
         <!--PanicAR Demo-->
         <scene sceneID="f7o-Yb-JbT">
@@ -175,6 +176,53 @@ POIs are automatically layouted and stacked</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zk8-z7-QJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-376" y="536"/>
+        </scene>
+        <!--Property Detail View Controller-->
+        <scene sceneID="z0F-Zz-d3y">
+            <objects>
+                <viewController id="JN5-8w-qQJ" customClass="PropertyDetailViewController" customModule="PanicARDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8yP-Gw-w7Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="665"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="dtB-7Z-BsO">
+                                <rect key="frame" x="66" y="269" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aHo-M5-jh5">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PropertyDetailViewCell" id="EQ7-MS-P5H" customClass="PropertyDetailViewCell" customModule="PanicARDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="64" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <animations/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tux-J7-RA2"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="665"/>
+                    <connections>
+                        <outlet property="allPropertyTiles" destination="dtB-7Z-BsO" id="EXb-4c-qwe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c5Y-b7-iFZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="520.5" y="-454.5"/>
         </scene>
     </scenes>
     <resources>
