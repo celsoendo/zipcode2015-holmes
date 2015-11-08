@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "36CB211F18E480E7000483F2"
-               BuildableName = "PRAR-Simple.app"
-               BlueprintName = "PRAR-Simple"
-               ReferencedContainer = "container:PRAR-Simple.xcodeproj">
+               BuildableName = "Holmes.app"
+               BlueprintName = "Holmes"
+               ReferencedContainer = "container:Holmes.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "36CB214018E480E8000483F2"
-               BuildableName = "PRAR-SimpleTests.xctest"
-               BlueprintName = "PRAR-SimpleTests"
-               ReferencedContainer = "container:PRAR-Simple.xcodeproj">
+               BuildableName = "Holmes.xctest"
+               BlueprintName = "HolmesTests"
+               ReferencedContainer = "container:Holmes.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "36CB211F18E480E7000483F2"
-            BuildableName = "PRAR-Simple.app"
-            BlueprintName = "PRAR-Simple"
-            ReferencedContainer = "container:PRAR-Simple.xcodeproj">
+            BuildableName = "Holmes.app"
+            BlueprintName = "Holmes"
+            ReferencedContainer = "container:Holmes.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "36CB211F18E480E7000483F2"
-            BuildableName = "PRAR-Simple.app"
-            BlueprintName = "PRAR-Simple"
-            ReferencedContainer = "container:PRAR-Simple.xcodeproj">
+            BuildableName = "Holmes.app"
+            BlueprintName = "Holmes"
+            ReferencedContainer = "container:Holmes.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "36CB211F18E480E7000483F2"
-            BuildableName = "PRAR-Simple.app"
-            BlueprintName = "PRAR-Simple"
-            ReferencedContainer = "container:PRAR-Simple.xcodeproj">
+            BuildableName = "Holmes.app"
+            BlueprintName = "Holmes"
+            ReferencedContainer = "container:Holmes.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

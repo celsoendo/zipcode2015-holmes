@@ -25,7 +25,7 @@
 //
 
 #import "ARObject.h"
-#import "PRAR_Simple-Swift.h"
+#import "Holmes-Swift.h"
 
 
 @interface ARObject ()

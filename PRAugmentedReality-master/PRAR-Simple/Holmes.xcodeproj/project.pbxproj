@@ -43,7 +43,6 @@
 		98A03FBC1BEF8D76001B0748 /* needle.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A03FBB1BEF8D76001B0748 /* needle.png */; };
 		98A03FC41BEFBE32001B0748 /* icon@1.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A03FC11BEFBE32001B0748 /* icon@1.png */; };
 		98A03FC51BEFBE32001B0748 /* icon@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A03FC21BEFBE32001B0748 /* icon@2.png */; };
-		98A03FC61BEFBE32001B0748 /* icon@3.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A03FC31BEFBE32001B0748 /* icon@3.png */; };
 		98C362FB1BEF14570001E46A /* ARObject.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98C362FA1BEF14570001E46A /* ARObject.xib */; };
 /* End PBXBuildFile section */
 
@@ -58,11 +57,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		36CB212018E480E7000483F2 /* PRAR-Simple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PRAR-Simple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36CB212018E480E7000483F2 /* Holmes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Holmes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36CB212318E480E7000483F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		36CB212518E480E7000483F2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		36CB212718E480E7000483F2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		36CB212B18E480E7000483F2 /* PRAR-Simple-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PRAR-Simple-Info.plist"; sourceTree = "<group>"; };
+		36CB212B18E480E7000483F2 /* Holmes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Holmes-Info.plist"; sourceTree = "<group>"; };
 		36CB212D18E480E7000483F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		36CB212F18E480E7000483F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		36CB213118E480E7000483F2 /* PRAR-Simple-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PRAR-Simple-Prefix.pch"; sourceTree = "<group>"; };
@@ -71,7 +70,7 @@
 		36CB213618E480E7000483F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36CB213818E480E7000483F2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		36CB213918E480E7000483F2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		36CB214118E480E8000483F2 /* PRAR-SimpleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PRAR-SimpleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36CB214118E480E8000483F2 /* Holmes.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Holmes.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36CB214218E480E8000483F2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		36CB214A18E480E8000483F2 /* PRAR-SimpleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PRAR-SimpleTests-Info.plist"; sourceTree = "<group>"; };
 		36CB214C18E480E8000483F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -154,8 +153,8 @@
 		36CB212118E480E7000483F2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				36CB212018E480E7000483F2 /* PRAR-Simple.app */,
-				36CB214118E480E8000483F2 /* PRAR-SimpleTests.xctest */,
+				36CB212018E480E7000483F2 /* Holmes.app */,
+				36CB214118E480E8000483F2 /* Holmes.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -194,7 +193,7 @@
 		36CB212A18E480E7000483F2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				36CB212B18E480E7000483F2 /* PRAR-Simple-Info.plist */,
+				36CB212B18E480E7000483F2 /* Holmes-Info.plist */,
 				36CB212C18E480E7000483F2 /* InfoPlist.strings */,
 				36CB212F18E480E7000483F2 /* main.m */,
 				36CB213118E480E7000483F2 /* PRAR-Simple-Prefix.pch */,
@@ -302,9 +301,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		36CB211F18E480E7000483F2 /* PRAR-Simple */ = {
+		36CB211F18E480E7000483F2 /* Holmes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 36CB215218E480E8000483F2 /* Build configuration list for PBXNativeTarget "PRAR-Simple" */;
+			buildConfigurationList = 36CB215218E480E8000483F2 /* Build configuration list for PBXNativeTarget "Holmes" */;
 			buildPhases = (
 				36CB211C18E480E7000483F2 /* Sources */,
 				36CB211D18E480E7000483F2 /* Frameworks */,
@@ -314,14 +313,14 @@
 			);
 			dependencies = (
 			);
-			name = "PRAR-Simple";
+			name = Holmes;
 			productName = "PRAR-Simple";
-			productReference = 36CB212018E480E7000483F2 /* PRAR-Simple.app */;
+			productReference = 36CB212018E480E7000483F2 /* Holmes.app */;
 			productType = "com.apple.product-type.application";
 		};
-		36CB214018E480E8000483F2 /* PRAR-SimpleTests */ = {
+		36CB214018E480E8000483F2 /* HolmesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 36CB215518E480E8000483F2 /* Build configuration list for PBXNativeTarget "PRAR-SimpleTests" */;
+			buildConfigurationList = 36CB215518E480E8000483F2 /* Build configuration list for PBXNativeTarget "HolmesTests" */;
 			buildPhases = (
 				36CB213D18E480E8000483F2 /* Sources */,
 				36CB213E18E480E8000483F2 /* Frameworks */,
@@ -332,9 +331,9 @@
 			dependencies = (
 				36CB214718E480E8000483F2 /* PBXTargetDependency */,
 			);
-			name = "PRAR-SimpleTests";
+			name = HolmesTests;
 			productName = "PRAR-SimpleTests";
-			productReference = 36CB214118E480E8000483F2 /* PRAR-SimpleTests.xctest */;
+			productReference = 36CB214118E480E8000483F2 /* Holmes.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -355,7 +354,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 36CB211B18E480E7000483F2 /* Build configuration list for PBXProject "PRAR-Simple" */;
+			buildConfigurationList = 36CB211B18E480E7000483F2 /* Build configuration list for PBXProject "Holmes" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -368,8 +367,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				36CB211F18E480E7000483F2 /* PRAR-Simple */,
-				36CB214018E480E8000483F2 /* PRAR-SimpleTests */,
+				36CB211F18E480E7000483F2 /* Holmes */,
+				36CB214018E480E8000483F2 /* HolmesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -387,7 +386,6 @@
 				98C362FB1BEF14570001E46A /* ARObject.xib in Resources */,
 				36CB218618E490B8000483F2 /* LoadingBack.png in Resources */,
 				98A03FBA1BEF806E001B0748 /* launch.png in Resources */,
-				98C363031BEF17CD0001E46A /* icon@3.png in Resources */,
 				98A03FC51BEFBE32001B0748 /* icon@2.png in Resources */,
 				41BC54A31BEFB80500613CC1 /* house.jpg in Resources */,
 				98A03FB41BEF7BA3001B0748 /* Compas.png in Resources */,
@@ -443,7 +441,7 @@
 /* Begin PBXTargetDependency section */
 		36CB214718E480E8000483F2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 36CB211F18E480E7000483F2 /* PRAR-Simple */;
+			target = 36CB211F18E480E7000483F2 /* Holmes */;
 			targetProxy = 36CB214618E480E8000483F2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -554,12 +552,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PRAR-Simple/PRAR-Simple-Prefix.pch";
-				INFOPLIST_FILE = "PRAR-Simple/PRAR-Simple-Info.plist";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "PRAR-Simple/Holmes-Prefix.pch";
+				INFOPLIST_FILE = "PRAR-Simple/Holmes-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jjingrong.zipcode;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Holmes;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PRAR-Simple/PRAR-Simple-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -575,12 +573,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PRAR-Simple/PRAR-Simple-Prefix.pch";
-				INFOPLIST_FILE = "PRAR-Simple/PRAR-Simple-Info.plist";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "PRAR-Simple/Holmes-Prefix.pch";
+				INFOPLIST_FILE = "PRAR-Simple/Holmes-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jjingrong.zipcode;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Holmes;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PRAR-Simple/PRAR-Simple-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
@@ -597,13 +595,13 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PRAR-Simple/PRAR-Simple-Prefix.pch";
+				GCC_PREFIX_HEADER = "PRAR-Simple/Holmes-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "PRAR-SimpleTests/PRAR-SimpleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Holmes;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -619,9 +617,9 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PRAR-Simple/PRAR-Simple-Prefix.pch";
+				GCC_PREFIX_HEADER = "PRAR-Simple/Holmes-Prefix.pch";
 				INFOPLIST_FILE = "PRAR-SimpleTests/PRAR-SimpleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Holmes;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -630,7 +628,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		36CB211B18E480E7000483F2 /* Build configuration list for PBXProject "PRAR-Simple" */ = {
+		36CB211B18E480E7000483F2 /* Build configuration list for PBXProject "Holmes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				36CB215018E480E8000483F2 /* Debug */,
@@ -639,7 +637,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		36CB215218E480E8000483F2 /* Build configuration list for PBXNativeTarget "PRAR-Simple" */ = {
+		36CB215218E480E8000483F2 /* Build configuration list for PBXNativeTarget "Holmes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				36CB215318E480E8000483F2 /* Debug */,
@@ -648,7 +646,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		36CB215518E480E8000483F2 /* Build configuration list for PBXNativeTarget "PRAR-SimpleTests" */ = {
+		36CB215518E480E8000483F2 /* Build configuration list for PBXNativeTarget "HolmesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				36CB215618E480E8000483F2 /* Debug */,
