@@ -387,9 +387,13 @@
 				98C362FB1BEF14570001E46A /* ARObject.xib in Resources */,
 				36CB218618E490B8000483F2 /* LoadingBack.png in Resources */,
 				98A03FBA1BEF806E001B0748 /* launch.png in Resources */,
-				98C363031BEF17CD0001E46A /* icon@3.png in Resources */,
+<<<<<<< HEAD
+				98A03FC61BEFBE32001B0748 /* icon@3.png in Resources */,
 				98A03FC51BEFBE32001B0748 /* icon@2.png in Resources */,
+=======
+				98C363031BEF17CD0001E46A /* icon@3.png in Resources */,
 				41BC54A31BEFB80500613CC1 /* house.jpg in Resources */,
+>>>>>>> 499569c57c39923fe4daed60b6b9ec9a21835c05
 				98A03FB41BEF7BA3001B0748 /* Compas.png in Resources */,
 				98A03FC41BEFBE32001B0748 /* icon@1.png in Resources */,
 				36CB218418E4861B000483F2 /* launchR4.png in Resources */,
