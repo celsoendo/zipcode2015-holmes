@@ -40,10 +40,10 @@
 		98A03FB81BEF8061001B0748 /* launchR4.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A03FB71BEF8061001B0748 /* launchR4.png */; };
 		98A03FBA1BEF806E001B0748 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A03FB91BEF806E001B0748 /* launch.png */; };
 		98A03FBC1BEF8D76001B0748 /* needle.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A03FBB1BEF8D76001B0748 /* needle.png */; };
+		98A03FC41BEFBE32001B0748 /* icon@1.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A03FC11BEFBE32001B0748 /* icon@1.png */; };
+		98A03FC51BEFBE32001B0748 /* icon@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A03FC21BEFBE32001B0748 /* icon@2.png */; };
+		98A03FC61BEFBE32001B0748 /* icon@3.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A03FC31BEFBE32001B0748 /* icon@3.png */; };
 		98C362FB1BEF14570001E46A /* ARObject.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98C362FA1BEF14570001E46A /* ARObject.xib */; };
-		98C363011BEF17CD0001E46A /* icon@1.png in Resources */ = {isa = PBXBuildFile; fileRef = 98C362FE1BEF17CD0001E46A /* icon@1.png */; };
-		98C363021BEF17CD0001E46A /* icon@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 98C362FF1BEF17CD0001E46A /* icon@2.png */; };
-		98C363031BEF17CD0001E46A /* icon@3.png in Resources */ = {isa = PBXBuildFile; fileRef = 98C363001BEF17CD0001E46A /* icon@3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,10 +107,10 @@
 		98A03FB71BEF8061001B0748 /* launchR4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchR4.png; sourceTree = "<group>"; };
 		98A03FB91BEF806E001B0748 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
 		98A03FBB1BEF8D76001B0748 /* needle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = needle.png; sourceTree = "<group>"; };
+		98A03FC11BEFBE32001B0748 /* icon@1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@1.png"; sourceTree = "<group>"; };
+		98A03FC21BEFBE32001B0748 /* icon@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2.png"; sourceTree = "<group>"; };
+		98A03FC31BEFBE32001B0748 /* icon@3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@3.png"; sourceTree = "<group>"; };
 		98C362FA1BEF14570001E46A /* ARObject.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ARObject.xib; sourceTree = "<group>"; };
-		98C362FE1BEF17CD0001E46A /* icon@1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@1.png"; sourceTree = "<group>"; };
-		98C362FF1BEF17CD0001E46A /* icon@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2.png"; sourceTree = "<group>"; };
-		98C363001BEF17CD0001E46A /* icon@3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@3.png"; sourceTree = "<group>"; };
 		CB23E47C42D742E9A50498CB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -221,11 +221,11 @@
 		36CB215818E481B2000483F2 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				98A03FC11BEFBE32001B0748 /* icon@1.png */,
+				98A03FC21BEFBE32001B0748 /* icon@2.png */,
+				98A03FC31BEFBE32001B0748 /* icon@3.png */,
 				98A03FB91BEF806E001B0748 /* launch.png */,
-				98C362FE1BEF17CD0001E46A /* icon@1.png */,
-				98C362FF1BEF17CD0001E46A /* icon@2.png */,
 				98A03FB71BEF8061001B0748 /* launchR4.png */,
-				98C363001BEF17CD0001E46A /* icon@3.png */,
 				36CB218518E490B8000483F2 /* LoadingBack.png */,
 				36CB218218E4861B000483F2 /* launchR4.png */,
 			);
@@ -377,7 +377,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				98A03FB81BEF8061001B0748 /* launchR4.png in Resources */,
-				98C363011BEF17CD0001E46A /* icon@1.png in Resources */,
 				36CB212E18E480E7000483F2 /* InfoPlist.strings in Resources */,
 				36CB21A818E49992000483F2 /* ARRadar.xib in Resources */,
 				36CB21A218E49992000483F2 /* ar_icon.png in Resources */,
@@ -385,13 +384,14 @@
 				98C362FB1BEF14570001E46A /* ARObject.xib in Resources */,
 				36CB218618E490B8000483F2 /* LoadingBack.png in Resources */,
 				98A03FBA1BEF806E001B0748 /* launch.png in Resources */,
-				98C363031BEF17CD0001E46A /* icon@3.png in Resources */,
+				98A03FC61BEFBE32001B0748 /* icon@3.png in Resources */,
+				98A03FC51BEFBE32001B0748 /* icon@2.png in Resources */,
 				98A03FB41BEF7BA3001B0748 /* Compas.png in Resources */,
+				98A03FC41BEFBE32001B0748 /* icon@1.png in Resources */,
 				36CB218418E4861B000483F2 /* launchR4.png in Resources */,
 				36CB213718E480E7000483F2 /* Main.storyboard in Resources */,
 				36CB21A618E49992000483F2 /* RadarMV.png in Resources */,
 				98A03FBC1BEF8D76001B0748 /* needle.png in Resources */,
-				98C363021BEF17CD0001E46A /* icon@2.png in Resources */,
 				81D67E531BEF47B800832D38 /* pill.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
