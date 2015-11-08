@@ -214,7 +214,7 @@ CATransform3DMake(CGFloat m11, CGFloat m12, CGFloat m13, CGFloat m14,
     
     ARObject *arObject = nil;
     
-    NSArray* images = @[@"ar_overlay_blue.png", @"ar_overlay_green.png", @"ar_overlay_orange.png", @"ar_overlay_red.png"];
+    NSArray* images = @[@"pill_blue", @"pill_green", @"pill_red", @"pill_orange"];
     
     int count = 0;
     for (NSNumber *ar_id in geoobjectOverlays.allKeys) {
