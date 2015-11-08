@@ -13,8 +13,8 @@ class HousingInformationViewCell: UICollectionViewCell {
 
     @IBOutlet weak var attributeValue: UILabel!
     
-    func setUpCell(idx: Int) {
-        self.attributeLabel.text = "Label is here"
-        self.attributeValue.text = "Value is here"
+    func setUpCell(label: String, value: String) {
+        self.attributeLabel.text = label
+        self.attributeValue.text = value
     }
 }
