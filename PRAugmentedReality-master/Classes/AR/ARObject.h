@@ -40,6 +40,7 @@
     double lat;
     double lon;
     NSNumber *distance;
+    NSString * _uID;
     
     // Overlay View Objects
     IBOutlet UILabel *titleL;
@@ -52,7 +53,8 @@
 - (id)initWithId:(int)newId
            title:(NSString*)newTitle
      coordinates:(CLLocationCoordinate2D)newCoordinates
-andCurrentLocation:(CLLocationCoordinate2D)currLoc;
+andCurrentLocation:(CLLocationCoordinate2D)currLoc
+          andUID:(NSString*)uID;
 
 - (NSDictionary*)getARObjectData;
 

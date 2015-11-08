@@ -33,12 +33,12 @@ import Foundation
     /* Functions */
     
     /* Setters */
-    @objc func fillUpDetails(input : NSDictionary, propertyIdentifier: Int) {
+    @objc public func fillUpDetails(input : NSDictionary, propertyIdentifier: Int) {
         self.propertyDetailManager[propertyIdentifier] = input;
     }
     
     /* Getters */
-    @objc func getDetails(propertyIdentifier: Int) -> NSDictionary {
+    @objc public func getDetails(propertyIdentifier: Int) -> NSDictionary {
         return self.propertyDetailManager[propertyIdentifier]!
     }
     

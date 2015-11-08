@@ -29,6 +29,7 @@
 
 
 @interface ARObject ()
+extern NSString* test;
 
 @end
 
@@ -41,11 +42,12 @@
            title:(NSString*)newTitle
      coordinates:(CLLocationCoordinate2D)newCoordinates
 andCurrentLocation:(CLLocationCoordinate2D)currLoc
+andUID:(NSString *)uID
 {
     self = [super init];
     if (self) {
         arId = newId;
-        
+        _uID = uID;
         arTitle = [[NSString alloc] initWithString:newTitle];
         
         lat = newCoordinates.latitude;
@@ -114,7 +116,7 @@ andCurrentLocation:(CLLocationCoordinate2D)currLoc
 //    CGPoint location = [recognizer locationInView:[recognizer.view superview]];
     
     //Do stuff here...
-    NSLog(@"hello");
+//    NSLog(@"hello");
 
 //    HousingInformationViewController *destinationVC = [[HousingInformationViewController alloc] init];
 //    [self.navigationController presentViewController:destinationVC animated:nil completion:nil];
@@ -124,10 +126,10 @@ andCurrentLocation:(CLLocationCoordinate2D)currLoc
     
     
 //    [self.navigationController performSegueWithIdentifier:@"showDetail" sender:self];
+    test = _uID;
     
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UIViewController *initViewController = [storyBoard instantiateInitialViewController];
-
     [self.view.window setRootViewController:initViewController];
     
     

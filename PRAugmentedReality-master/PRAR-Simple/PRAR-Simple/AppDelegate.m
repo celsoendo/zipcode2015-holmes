@@ -9,8 +9,8 @@
 #import "AppDelegate.h"
 
 @implementation AppDelegate
-int test = 0;
-NSMutableDictionary* dictionary = @{}.mutableCopy;
+NSString* test = @"";
+
 
 
 
@@ -45,6 +45,16 @@ NSMutableDictionary* dictionary = @{}.mutableCopy;
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
++ (NSString*)getGlobalString {
+    
+    return test;
+}
+
++ (void)clearGlobalString {
+    
+    test = @"";
 }
 
 @end

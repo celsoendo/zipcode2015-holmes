@@ -61,11 +61,13 @@ CATransform3DMake(CGFloat m11, CGFloat m12, CGFloat m13, CGFloat m14,
     
     for (NSDictionary *arObjectData in arData) {
         NSNumber *ar_id = @([arObjectData[@"id"] intValue]);
+        NSString* uID = arObjectData[@"uID"];
         arObject = [[ARObject alloc] initWithId:ar_id.intValue
                                            title:arObjectData[@"title"]
                                      coordinates:CLLocationCoordinate2DMake([arObjectData[@"lat"] doubleValue],
                                                                             [arObjectData[@"lon"] doubleValue])
-                              andCurrentLocation:newLocation];
+                              andCurrentLocation:newLocation
+                                         andUID:uID];
         
         x_pos = [self.locationMath getARObjectXPosition:arObject]-arObject.view.frame.size.width;
         

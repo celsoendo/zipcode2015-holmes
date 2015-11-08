@@ -17,11 +17,11 @@
 
 
 @interface ViewController ()
-extern int test;
+extern NSString *test;
 
 
 @property (nonatomic, strong) PRARManager *prARManager;
-@property (nonatomic, strong) PropertyModel *propertyManager;
+
 
 @end
 
@@ -44,19 +44,18 @@ extern int test;
     
     // Initialize the manager so it wakes up (can do this anywhere you want
     self.prARManager = [[PRARManager alloc] initWithSize:self.view.frame.size delegate:self showRadar:YES];
-    self.propertyManager = [PropertyModel sharedInstance];
+
 }
 
 -(void)viewDidAppear:(BOOL)animated
 {
-    if (test > 0) {
+    if (test != @"") {
 //        [self performSegueWithIdentifier:@"getDetail" sender:self];
-        test = 0;
+
         HousingInformationViewController *destinationVC = [[HousingInformationViewController alloc] init];
         [self presentViewController:destinationVC animated:true completion:nil];
     } else {
         [self getLocations];
-        test += 1;
     }
     
     
@@ -116,16 +115,18 @@ extern int test;
         NSDictionary* thisLocation = [locations objectAtIndex:i];
         
         // Storing into property manager model
-        self.propertyManager.propertyDetailManager[ [thisLocation objectForKey:@"id"] ] = thisLocation;
+        
         
         NSString* title = [thisLocation objectForKey:@"baths"];
         NSString* subtitle = [thisLocation objectForKey:@"address"];
         NSArray* coordinates = [thisLocation objectForKey:@"coordinates"];
+        NSString* uID = [thisLocation objectForKey:@"id"];
         double lat = [[coordinates objectAtIndex:1] doubleValue];
         double lng = [[coordinates objectAtIndex:0] doubleValue];
         
         NSDictionary *point = @{
                                 @"id" : @(i),
+                                @"uID" : uID,
                                 @"title" : [NSString stringWithFormat:@"%@", subtitle],
                                 @"lon" : @(lng),
                                 @"lat" : @(lat),
@@ -140,11 +141,13 @@ extern int test;
         NSString* title = [thisLocation objectForKey:@"name"];
         NSString* subtitle = [thisLocation objectForKey:@"vicinity"];
         NSDictionary* coordinates = [[thisLocation objectForKey:@"geometry"] objectForKey:@"location"];
+        NSString* uID = [thisLocation objectForKey:@"place_id"];
         double lat = [[coordinates objectForKey:@"lat"] doubleValue];
         double lng = [[coordinates objectForKey:@"lon"] doubleValue];
         
         NSDictionary *point = @{
                                 @"id" : @(i + [locations count]),
+                                @"uID" : uID,
                                 @"title" : title,
                                 @"lon" : @(lng),
                                 @"lat" : @(lat),

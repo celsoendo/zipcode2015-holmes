@@ -12,4 +12,7 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
++ (NSString*) getGlobalString;
++ (void) clearGlobalString;
+
 @end
