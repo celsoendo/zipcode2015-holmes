@@ -9,6 +9,7 @@
 //
 
 #import "PARD2DPoiViewController.h"
+#import "PanicARDemo-Swift.h"
 
 // Timer to regularly update GPS information
 static NSTimer *infoTimer = nil;
@@ -140,9 +141,20 @@ bool _areOptionsVisible = false;
 #pragma mark - PARControllerDelegate
 
 - (void)arDidTapObject:(id<PARObjectDelegate>)object {
-    [PARController showAlert:@"Tap"
-                 withMessage:[NSString stringWithFormat:@"Label tapped: %@", object.title]
-            andDismissButton:@"Okay"];
+    [self performSegueWithIdentifier: @"showPropertyDetails" sender:self];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"showPropertyDetails"]) {
+        
+        // Get reference to the destination view controller
+          PropertyDetailViewController *vc = [segue destinationViewController];
+        
+        // Pass any objects to the view controller here, like...
+        // [vc setMyObjectHere:object];
+        [segue.destinationViewController setTitle:@"WeekView"];
+    }
 }
 
 #pragma mark - PSKSensorDelegate

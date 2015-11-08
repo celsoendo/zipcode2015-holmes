@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4180CFC51BEEE79700F8C710 /* PropertyDetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4180CFC31BEEE79700F8C710 /* PropertyDetailViewCell.swift */; };
+		4180CFC61BEEE79700F8C710 /* PropertyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4180CFC41BEEE79700F8C710 /* PropertyDetailViewController.swift */; };
 		93D81D2217D75CA600D65275 /* PanicARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D81D2117D75CA600D65275 /* PanicARKit.framework */; };
 		93D81D2517D765CA00D65275 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D81D2417D765CA00D65275 /* CoreVideo.framework */; };
 		93D81D2717D7663000D65275 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D81D2617D7663000D65275 /* CoreMedia.framework */; };
@@ -48,6 +50,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4180CFC31BEEE79700F8C710 /* PropertyDetailViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyDetailViewCell.swift; sourceTree = "<group>"; };
+		4180CFC41BEEE79700F8C710 /* PropertyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyDetailViewController.swift; sourceTree = "<group>"; };
 		93D81D2117D75CA600D65275 /* PanicARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PanicARKit.framework; path = ../Framework/PanicARKit.framework; sourceTree = "<group>"; };
 		93D81D2417D765CA00D65275 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		93D81D2617D7663000D65275 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -168,6 +172,8 @@
 				99E57E3116D7E6350093E85F /* PARDAboutViewController.m */,
 				99E57E3216D7E6350093E85F /* PARDMapViewController.h */,
 				99E57E3316D7E6350093E85F /* PARDMapViewController.mm */,
+				4180CFC31BEEE79700F8C710 /* PropertyDetailViewCell.swift */,
+				4180CFC41BEEE79700F8C710 /* PropertyDetailViewController.swift */,
 				99E57DF816D7E4720093E85F /* MainStoryboard.storyboard */,
 				99E57E2F16D7E5A80093E85F /* Images */,
 				99F6E7FC19B87A3C000B8D32 /* Images.xcassets */,
@@ -311,6 +317,8 @@
 				99E57DF116D7E4720093E85F /* PARDAppDelegate.m in Sources */,
 				99E57E3616D7E6350093E85F /* PARDAboutViewController.m in Sources */,
 				99E57E3716D7E6350093E85F /* PARDMapViewController.mm in Sources */,
+				4180CFC61BEEE79700F8C710 /* PropertyDetailViewController.swift in Sources */,
+				4180CFC51BEEE79700F8C710 /* PropertyDetailViewCell.swift in Sources */,
 				99E57E3816D7E6350093E85F /* PARD2DPoiViewController.mm in Sources */,
 				98DBD74D1BEEB4C400C2F107 /* NetworkUI.swift in Sources */,
 			);
@@ -373,7 +381,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IBSC_ERRORS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "PanicARDemo-Bridging-Header.h";
@@ -400,7 +409,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IBSC_ERRORS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "PanicARDemo-Bridging-Header.h";
