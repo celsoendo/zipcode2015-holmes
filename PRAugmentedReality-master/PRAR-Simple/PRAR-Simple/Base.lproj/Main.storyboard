@@ -62,13 +62,6 @@
                         <subviews>
                             <view alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xy3-ta-utd">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glj-JJ-rZa">
-                                        <rect key="frame" x="50" y="495" width="60" height="60"/>
-                                        <animations/>
-                                        <state key="normal" image="phone325"/>
-                                    </button>
-                                </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -123,11 +116,6 @@
                                 <animations/>
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.49803921569999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8F-NR-l4h">
-                                <rect key="frame" x="217" y="489" width="70" height="70"/>
-                                <animations/>
-                                <state key="normal" title="2" image="navigation12"/>
-                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -167,8 +155,6 @@
     <resources>
         <image name="LoadingBack" width="200" height="200"/>
         <image name="house.jpg" width="300" height="225"/>
-        <image name="navigation12" width="512" height="512"/>
-        <image name="phone325" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="R6e-lS-Vhq"/>

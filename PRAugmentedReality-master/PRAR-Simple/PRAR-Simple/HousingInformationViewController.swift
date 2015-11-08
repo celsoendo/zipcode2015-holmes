@@ -83,6 +83,7 @@ class HousingInformationViewController: UIViewController, UICollectionViewDelega
                 }
                 self.setUpImage()
                 AppDelegate.clearGlobalString()
+                self.setUpBothButtons()
             } catch {
                 
             }
@@ -96,17 +97,15 @@ class HousingInformationViewController: UIViewController, UICollectionViewDelega
         return (_label, _value)
     }
     func setUpImage() {
-//        self.houseImage.image = UIImage(named: "house.jpg")
+//        let newImageOfHouse = UIImageView(frame: CGRect(x: 0, y: 25, width: 327, height: 219))
 //        if let _ = self.apiData["media"] {
 //            print ("IMAGE UNAVAILABLE")
 //            return
 //        } else {
-//            
-//            print (self.apiData["media"]![0]["url"] as! String)
-//            
 //            if let url = NSURL(string: (self.apiData["media"]![0]["url"] as! String)) {
 //                if let data = NSData(contentsOfURL: url) {
-//                    self.houseImage.image = UIImage(data: data)
+//                    newImageOfHouse.image = UIImage(data: data)
+//                    self.view.addSubview(newImageOfHouse)
 //                }
 //            }
 //        }
@@ -137,5 +136,27 @@ class HousingInformationViewController: UIViewController, UICollectionViewDelega
         let b = CGFloat(Float(Int(color) & mask)/255.0)
         
         return UIColor(red: r, green: g, blue: b, alpha: CGFloat(alpha))
+    }
+    
+    func setUpBothButtons() {
+        let navigationView = UIButton(frame: CGRect(x: 227, y: 489, width: 60, height: 60))
+        navigationView.setImage(UIImage(named: "navigation12"), forState: .Normal)
+        navigationView.addTarget(self, action: "navigationButtonPressed", forControlEvents: UIControlEvents.TouchUpInside)
+        self.view.addSubview(navigationView)
+        
+        let contactView = UIButton(frame: CGRect(x: 50, y: 489, width: 60, height: 60))
+        contactView.setImage(UIImage(named: "phone325"), forState: .Normal)
+        contactView.addTarget(self, action: "contactButtonPressed", forControlEvents: UIControlEvents.TouchUpInside)
+        self.view.addSubview(contactView)
+    }
+    
+    func navigationButtonPressed() {
+        let stringURL = "http://maps.apple.com/?q=" + (self.apiData["county"] as! String)
+        let targetURL = NSURL(string: stringURL)
+        UIApplication.sharedApplication().openURL(targetURL!)
+    }
+    
+    func contactButtonPressed() {
+        
     }
 }
