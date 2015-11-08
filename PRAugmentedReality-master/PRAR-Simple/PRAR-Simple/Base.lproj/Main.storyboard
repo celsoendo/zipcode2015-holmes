@@ -63,28 +63,20 @@
                             <view alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xy3-ta-utd">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PtF-Sv-Y2K">
-                                        <rect key="frame" x="0.0" y="621" width="375" height="46"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glj-JJ-rZa">
+                                        <rect key="frame" x="50" y="495" width="60" height="60"/>
                                         <animations/>
-                                        <color key="backgroundColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Button">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                        </state>
+                                        <state key="normal" image="phone325"/>
                                     </button>
                                 </subviews>
                                 <animations/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PnP-oJ-9Na">
-                                <rect key="frame" x="0.0" y="25" width="375" height="219"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.92156862750000001" green="0.49803921569999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nM0-z2-lhE">
-                                <rect key="frame" x="0.0" y="27" width="375" height="613"/>
+                                <rect key="frame" x="0.0" y="252" width="375" height="224"/>
                                 <animations/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.59607843140000005" blue="0.85882352939999995" alpha="0.79000000000000004" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="eHf-i4-Qpl">
                                     <size key="itemSize" width="375" height="67"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -98,13 +90,43 @@
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="67"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="l4s-nZ-4kw">
+                                                    <rect key="frame" x="8" y="8" width="156" height="51"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LxY-Db-RKZ">
+                                                    <rect key="frame" x="151" y="9" width="190" height="50"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                             <animations/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <animations/>
+                                        <connections>
+                                            <outlet property="attributeLabel" destination="l4s-nZ-4kw" id="Ig9-oK-qP6"/>
+                                            <outlet property="attributeValue" destination="LxY-Db-RKZ" id="B5f-9d-vTw"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PnP-oJ-9Na">
+                                <rect key="frame" x="0.0" y="25" width="375" height="219"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.49803921569999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8F-NR-l4h">
+                                <rect key="frame" x="217" y="489" width="70" height="70"/>
+                                <animations/>
+                                <state key="normal" title="2" image="navigation12"/>
+                            </button>
                         </subviews>
                         <animations/>
                     </view>
@@ -113,12 +135,11 @@
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="allCheckoutItemTiles" destination="nM0-z2-lhE" id="QrX-yz-JpM"/>
-                        <outlet property="buttonView" destination="PtF-Sv-Y2K" id="zD5-MJ-eHE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qS9-k1-xdY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1266.5" y="936.5"/>
+            <point key="canvasLocation" x="1274.5" y="946.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tnv-7C-0s8">
@@ -143,6 +164,8 @@
     </scenes>
     <resources>
         <image name="LoadingBack" width="200" height="200"/>
+        <image name="navigation12" width="512" height="512"/>
+        <image name="phone325" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="R6e-lS-Vhq"/>
