@@ -35,10 +35,10 @@
 		36CB21A818E49992000483F2 /* ARRadar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36CB219A18E49992000483F2 /* ARRadar.xib */; };
 		36CB21A918E49992000483F2 /* LocationMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CB219C18E49992000483F2 /* LocationMath.m */; };
 		36CB21AA18E49992000483F2 /* PRARManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CB219E18E49992000483F2 /* PRARManager.m */; };
-		98C362F71BEF0F650001E46A /* icon@3.png in Resources */ = {isa = PBXBuildFile; fileRef = 98C362F41BEF0F650001E46A /* icon@3.png */; };
-		98C362F81BEF0F650001E46A /* icon@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 98C362F51BEF0F650001E46A /* icon@2.png */; };
-		98C362F91BEF0F650001E46A /* icon@1.png in Resources */ = {isa = PBXBuildFile; fileRef = 98C362F61BEF0F650001E46A /* icon@1.png */; };
 		98C362FB1BEF14570001E46A /* ARObject.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98C362FA1BEF14570001E46A /* ARObject.xib */; };
+		98C363011BEF17CD0001E46A /* icon@1.png in Resources */ = {isa = PBXBuildFile; fileRef = 98C362FE1BEF17CD0001E46A /* icon@1.png */; };
+		98C363021BEF17CD0001E46A /* icon@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 98C362FF1BEF17CD0001E46A /* icon@2.png */; };
+		98C363031BEF17CD0001E46A /* icon@3.png in Resources */ = {isa = PBXBuildFile; fileRef = 98C363001BEF17CD0001E46A /* icon@3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,10 +91,10 @@
 		36CB219C18E49992000483F2 /* LocationMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationMath.m; sourceTree = "<group>"; };
 		36CB219D18E49992000483F2 /* PRARManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRARManager.h; sourceTree = "<group>"; };
 		36CB219E18E49992000483F2 /* PRARManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRARManager.m; sourceTree = "<group>"; };
-		98C362F41BEF0F650001E46A /* icon@3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@3.png"; path = "../../../../../../Desktop/icon@3.png"; sourceTree = "<group>"; };
-		98C362F51BEF0F650001E46A /* icon@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2.png"; path = "../../../../../../Desktop/icon@2.png"; sourceTree = "<group>"; };
-		98C362F61BEF0F650001E46A /* icon@1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@1.png"; path = "../../../../../../Desktop/icon@1.png"; sourceTree = "<group>"; };
 		98C362FA1BEF14570001E46A /* ARObject.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ARObject.xib; sourceTree = "<group>"; };
+		98C362FE1BEF17CD0001E46A /* icon@1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@1.png"; sourceTree = "<group>"; };
+		98C362FF1BEF17CD0001E46A /* icon@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2.png"; sourceTree = "<group>"; };
+		98C363001BEF17CD0001E46A /* icon@3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@3.png"; sourceTree = "<group>"; };
 		CB23E47C42D742E9A50498CB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -201,12 +201,12 @@
 		36CB215818E481B2000483F2 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
-				98C362F51BEF0F650001E46A /* icon@2.png */,
-				98C362F61BEF0F650001E46A /* icon@1.png */,
+				98C362FE1BEF17CD0001E46A /* icon@1.png */,
+				98C362FF1BEF17CD0001E46A /* icon@2.png */,
+				98C363001BEF17CD0001E46A /* icon@3.png */,
 				36CB218518E490B8000483F2 /* LoadingBack.png */,
 				36CB218118E4861B000483F2 /* launch.png */,
 				36CB218218E4861B000483F2 /* launchR4.png */,
-				98C362F41BEF0F650001E46A /* icon@3.png */,
 			);
 			path = Graphics;
 			sourceTree = "<group>";
@@ -341,21 +341,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				36CB21A418E49992000483F2 /* ar_overlay@2x.png in Resources */,
+				98C363011BEF17CD0001E46A /* icon@1.png in Resources */,
 				36CB218318E4861B000483F2 /* launch.png in Resources */,
 				36CB212E18E480E7000483F2 /* InfoPlist.strings in Resources */,
 				36CB21A818E49992000483F2 /* ARRadar.xib in Resources */,
 				36CB21A218E49992000483F2 /* ar_icon.png in Resources */,
 				36CB216418E48338000483F2 /* Media.xcassets in Resources */,
-				98C362F91BEF0F650001E46A /* icon@1.png in Resources */,
 				98C362FB1BEF14570001E46A /* ARObject.xib in Resources */,
 				36CB218618E490B8000483F2 /* LoadingBack.png in Resources */,
+				98C363031BEF17CD0001E46A /* icon@3.png in Resources */,
 				36CB21A518E49992000483F2 /* Radar.png in Resources */,
 				36CB218418E4861B000483F2 /* launchR4.png in Resources */,
 				36CB21A318E49992000483F2 /* ar_overlay.png in Resources */,
 				36CB213718E480E7000483F2 /* Main.storyboard in Resources */,
 				36CB21A618E49992000483F2 /* RadarMV.png in Resources */,
-				98C362F71BEF0F650001E46A /* icon@3.png in Resources */,
-				98C362F81BEF0F650001E46A /* icon@2.png in Resources */,
+				98C363021BEF17CD0001E46A /* icon@2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
