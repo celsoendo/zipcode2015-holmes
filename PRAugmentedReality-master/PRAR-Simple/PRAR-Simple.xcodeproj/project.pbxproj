@@ -36,6 +36,7 @@
 		36CB21A918E49992000483F2 /* LocationMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CB219C18E49992000483F2 /* LocationMath.m */; };
 		36CB21AA18E49992000483F2 /* PRARManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CB219E18E49992000483F2 /* PRARManager.m */; };
 		4178AF6D1BEF195800ABDEFA /* HousingInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4178AF6C1BEF195800ABDEFA /* HousingInformationViewController.swift */; };
+		81D67E3D1BEF2B7000832D38 /* ar_overlay_pill.png in Resources */ = {isa = PBXBuildFile; fileRef = 81D67E3C1BEF2B7000832D38 /* ar_overlay_pill.png */; };
 		98C362FB1BEF14570001E46A /* ARObject.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98C362FA1BEF14570001E46A /* ARObject.xib */; };
 		98C363011BEF17CD0001E46A /* icon@1.png in Resources */ = {isa = PBXBuildFile; fileRef = 98C362FE1BEF17CD0001E46A /* icon@1.png */; };
 		98C363021BEF17CD0001E46A /* icon@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 98C362FF1BEF17CD0001E46A /* icon@2.png */; };
@@ -94,7 +95,8 @@
 		36CB219E18E49992000483F2 /* PRARManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRARManager.m; sourceTree = "<group>"; };
 		4178AF6B1BEF195700ABDEFA /* PRAR-Simple-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PRAR-Simple-Bridging-Header.h"; sourceTree = "<group>"; };
 		4178AF6C1BEF195800ABDEFA /* HousingInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousingInformationViewController.swift; sourceTree = "<group>"; };
-		98C362FA1BEF14570001E46A /* ARObject.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ARObject.xib; sourceTree = "<group>"; };
+		81D67E3C1BEF2B7000832D38 /* ar_overlay_pill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ar_overlay_pill.png; path = ../../../../../ar_overlay_pill.png; sourceTree = "<group>"; };
+		98C362FA1BEF14570001E46A /* ARObject.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ARObject.xib; path = AR/ARObject.xib; sourceTree = "<group>"; };
 		98C362FE1BEF17CD0001E46A /* icon@1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@1.png"; sourceTree = "<group>"; };
 		98C362FF1BEF17CD0001E46A /* icon@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2.png"; sourceTree = "<group>"; };
 		98C363001BEF17CD0001E46A /* icon@3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@3.png"; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				36CB219018E49992000483F2 /* ARSettings.h */,
+				98C362FA1BEF14570001E46A /* ARObject.xib */,
 				36CB219D18E49992000483F2 /* PRARManager.h */,
 				36CB219E18E49992000483F2 /* PRARManager.m */,
 				36CB218A18E49992000483F2 /* AR */,
@@ -233,7 +236,6 @@
 		36CB218A18E49992000483F2 /* AR */ = {
 			isa = PBXGroup;
 			children = (
-				98C362FA1BEF14570001E46A /* ARObject.xib */,
 				36CB218B18E49992000483F2 /* ARController.h */,
 				36CB218C18E49992000483F2 /* ARController.m */,
 				36CB218D18E49992000483F2 /* ARObject.h */,
@@ -245,6 +247,7 @@
 		36CB219118E49992000483F2 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				81D67E3C1BEF2B7000832D38 /* ar_overlay_pill.png */,
 				36CB219218E49992000483F2 /* ar_icon.png */,
 				36CB219318E49992000483F2 /* ar_overlay.png */,
 				36CB219418E49992000483F2 /* ar_overlay@2x.png */,
@@ -315,7 +318,7 @@
 				ORGANIZATIONNAME = GeoffroyLesage;
 				TargetAttributes = {
 					36CB211F18E480E7000483F2 = {
-						DevelopmentTeam = 3SST48GYDF;
+						DevelopmentTeam = 5YBA2XGCA7;
 					};
 					36CB214018E480E8000483F2 = {
 						TestTargetID = 36CB211F18E480E7000483F2;
@@ -357,6 +360,7 @@
 				36CB218618E490B8000483F2 /* LoadingBack.png in Resources */,
 				98C363031BEF17CD0001E46A /* icon@3.png in Resources */,
 				36CB21A518E49992000483F2 /* Radar.png in Resources */,
+				81D67E3D1BEF2B7000832D38 /* ar_overlay_pill.png in Resources */,
 				36CB218418E4861B000483F2 /* launchR4.png in Resources */,
 				36CB21A318E49992000483F2 /* ar_overlay.png in Resources */,
 				36CB213718E480E7000483F2 /* Main.storyboard in Resources */,
@@ -519,12 +523,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PRAR-Simple/PRAR-Simple-Prefix.pch";
 				INFOPLIST_FILE = "PRAR-Simple/PRAR-Simple-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jingrong.zipcode;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sritam.zipcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PRAR-Simple/PRAR-Simple-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -540,11 +546,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PRAR-Simple/PRAR-Simple-Prefix.pch";
 				INFOPLIST_FILE = "PRAR-Simple/PRAR-Simple-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jingrong.zipcode;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sritam.zipcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PRAR-Simple/PRAR-Simple-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
