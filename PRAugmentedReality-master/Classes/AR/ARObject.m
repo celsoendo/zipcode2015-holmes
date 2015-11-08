@@ -115,7 +115,24 @@ andCurrentLocation:(CLLocationCoordinate2D)currLoc
     
     //Do stuff here...
     NSLog(@"hello");
-    [self performSegueWithIdentifier:@"segueToMoreInformation" sender:self];
+
+//    HousingInformationViewController *destinationVC = [[HousingInformationViewController alloc] init];
+//    [self.navigationController presentViewController:destinationVC animated:nil completion:nil];
+//    [self.navigationController pushViewController:destinationVC animated:YES];
+
+    
+    
+    
+//    [self.navigationController performSegueWithIdentifier:@"showDetail" sender:self];
+    
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *initViewController = [storyBoard instantiateInitialViewController];
+
+    [self.view.window setRootViewController:initViewController];
+    
+    
+//    [self.navigationController performSegueWithIdentifier:@"getDetail" sender:self];
+    
 }
 
 @end
