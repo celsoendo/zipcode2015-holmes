@@ -25,6 +25,7 @@
 //
 
 #import "ARObject.h"
+#import "PRAR_Simple-Swift.h"
 
 
 @interface ARObject ()
@@ -114,6 +115,7 @@ andCurrentLocation:(CLLocationCoordinate2D)currLoc
     
     //Do stuff here...
     NSLog(@"hello");
+    [self performSegueWithIdentifier:@"segueToMoreInformation" sender:self];
 }
 
 @end

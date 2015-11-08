@@ -35,6 +35,7 @@
 		36CB21A818E49992000483F2 /* ARRadar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36CB219A18E49992000483F2 /* ARRadar.xib */; };
 		36CB21A918E49992000483F2 /* LocationMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CB219C18E49992000483F2 /* LocationMath.m */; };
 		36CB21AA18E49992000483F2 /* PRARManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CB219E18E49992000483F2 /* PRARManager.m */; };
+		4178AF6D1BEF195800ABDEFA /* HousingInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4178AF6C1BEF195800ABDEFA /* HousingInformationViewController.swift */; };
 		98C362FB1BEF14570001E46A /* ARObject.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98C362FA1BEF14570001E46A /* ARObject.xib */; };
 		98C363011BEF17CD0001E46A /* icon@1.png in Resources */ = {isa = PBXBuildFile; fileRef = 98C362FE1BEF17CD0001E46A /* icon@1.png */; };
 		98C363021BEF17CD0001E46A /* icon@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 98C362FF1BEF17CD0001E46A /* icon@2.png */; };
@@ -91,6 +92,8 @@
 		36CB219C18E49992000483F2 /* LocationMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationMath.m; sourceTree = "<group>"; };
 		36CB219D18E49992000483F2 /* PRARManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRARManager.h; sourceTree = "<group>"; };
 		36CB219E18E49992000483F2 /* PRARManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRARManager.m; sourceTree = "<group>"; };
+		4178AF6B1BEF195700ABDEFA /* PRAR-Simple-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PRAR-Simple-Bridging-Header.h"; sourceTree = "<group>"; };
+		4178AF6C1BEF195800ABDEFA /* HousingInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousingInformationViewController.swift; sourceTree = "<group>"; };
 		98C362FA1BEF14570001E46A /* ARObject.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ARObject.xib; sourceTree = "<group>"; };
 		98C362FE1BEF17CD0001E46A /* icon@1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@1.png"; sourceTree = "<group>"; };
 		98C362FF1BEF17CD0001E46A /* icon@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2.png"; sourceTree = "<group>"; };
@@ -160,11 +163,13 @@
 				36CB213218E480E7000483F2 /* AppDelegate.h */,
 				36CB213318E480E7000483F2 /* AppDelegate.m */,
 				36CB213518E480E7000483F2 /* Main.storyboard */,
+				4178AF6C1BEF195800ABDEFA /* HousingInformationViewController.swift */,
 				36CB213818E480E7000483F2 /* ViewController.h */,
 				36CB213918E480E7000483F2 /* ViewController.m */,
 				36CB216318E48338000483F2 /* Media.xcassets */,
 				36CB218918E49992000483F2 /* Classes */,
 				36CB212A18E480E7000483F2 /* Supporting Files */,
+				4178AF6B1BEF195700ABDEFA /* PRAR-Simple-Bridging-Header.h */,
 			);
 			path = "PRAR-Simple";
 			sourceTree = "<group>";
@@ -305,11 +310,12 @@
 		36CB211818E480E7000483F2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = GeoffroyLesage;
 				TargetAttributes = {
 					36CB211F18E480E7000483F2 = {
-						DevelopmentTeam = 4TL9CF482Q;
+						DevelopmentTeam = 3SST48GYDF;
 					};
 					36CB214018E480E8000483F2 = {
 						TestTargetID = 36CB211F18E480E7000483F2;
@@ -376,6 +382,7 @@
 			files = (
 				36CB21AA18E49992000483F2 /* PRARManager.m in Sources */,
 				36CB21A018E49992000483F2 /* ARObject.m in Sources */,
+				4178AF6D1BEF195800ABDEFA /* HousingInformationViewController.swift in Sources */,
 				36CB219F18E49992000483F2 /* ARController.m in Sources */,
 				36CB213A18E480E8000483F2 /* ViewController.m in Sources */,
 				36CB21A718E49992000483F2 /* ARRadar.m in Sources */,
@@ -506,14 +513,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PRAR-Simple/PRAR-Simple-Prefix.pch";
 				INFOPLIST_FILE = "PRAR-Simple/PRAR-Simple-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.probitytechnology.zipcode;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jingrong.zipcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PRAR-Simple/PRAR-Simple-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -523,14 +534,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PRAR-Simple/PRAR-Simple-Prefix.pch";
 				INFOPLIST_FILE = "PRAR-Simple/PRAR-Simple-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.probitytechnology.zipcode;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jingrong.zipcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PRAR-Simple/PRAR-Simple-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
