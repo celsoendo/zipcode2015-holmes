@@ -5,16 +5,16 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Loading-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Loading" title="Loading" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iem-LV-boE">
@@ -37,6 +37,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="EX5-3W-4bH"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="loadingV" destination="Iem-LV-boE" id="h0h-nD-erm"/>
                         <segue destination="3HV-w7-27b" kind="push" identifier="getDetail" id="Xn8-Jp-Z04"/>
@@ -44,11 +46,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="403" y="937"/>
         </scene>
-        <!--Housing Information View Controller-->
+        <!--HouseInfo-->
         <scene sceneID="UwK-tm-Ibv">
             <objects>
-                <viewController storyboardIdentifier="house" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3HV-w7-27b" customClass="HousingInformationViewController" customModule="PRAR_Simple" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HouseInfo" title="HouseInfo" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3HV-w7-27b" customClass="HousingInformationViewController" customModule="PRAR_Simple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eAc-4O-UE3"/>
                         <viewControllerLayoutGuide type="bottom" id="ZBZ-2F-hbK"/>
@@ -57,38 +60,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nM0-z2-lhE">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="613"/>
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xy3-ta-utd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glj-JJ-rZa">
+                                        <rect key="frame" x="50" y="495" width="60" height="60"/>
+                                        <animations/>
+                                        <state key="normal" image="phone325"/>
+                                    </button>
+                                </subviews>
                                 <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nM0-z2-lhE">
+                                <rect key="frame" x="0.0" y="252" width="375" height="224"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.59607843140000005" blue="0.85882352939999995" alpha="0.79000000000000004" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="eHf-i4-Qpl">
                                     <size key="itemSize" width="375" height="67"/>
-                                    <size key="headerReferenceSize" width="0.0" height="25"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HousingInformationViewCell" id="kNo-N2-kBc" customClass="HousingInformationViewCell" customModule="PRAR_Simple" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="25" width="375" height="67"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="67"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="67"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="l4s-nZ-4kw">
+                                                    <rect key="frame" x="8" y="8" width="156" height="51"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LxY-Db-RKZ">
+                                                    <rect key="frame" x="151" y="9" width="190" height="50"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                             <animations/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <animations/>
+                                        <connections>
+                                            <outlet property="attributeLabel" destination="l4s-nZ-4kw" id="Ig9-oK-qP6"/>
+                                            <outlet property="attributeValue" destination="LxY-Db-RKZ" id="B5f-9d-vTw"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="taJ-C3-dUd">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="25"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <animations/>
-                                </collectionReusableView>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PtF-Sv-Y2K">
-                                <rect key="frame" x="0.0" y="621" width="375" height="46"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PnP-oJ-9Na">
+                                <rect key="frame" x="0.0" y="25" width="375" height="219"/>
                                 <animations/>
-                                <state key="normal" title="Button"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.49803921569999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8F-NR-l4h">
+                                <rect key="frame" x="217" y="489" width="70" height="70"/>
+                                <animations/>
+                                <state key="normal" title="2" image="navigation12"/>
                             </button>
                         </subviews>
                         <animations/>
@@ -98,15 +135,39 @@
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="allCheckoutItemTiles" destination="nM0-z2-lhE" id="QrX-yz-JpM"/>
-                        <outlet property="buttonView" destination="PtF-Sv-Y2K" id="zD5-MJ-eHE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qS9-k1-xdY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1029.5" y="226.5"/>
+            <point key="canvasLocation" x="1274.5" y="946.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tnv-7C-0s8">
+            <objects>
+                <navigationController id="gV9-2W-XPB" sceneMemberID="viewController">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lhu-xd-v1S">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="TVp-QY-o70"/>
+                        <segue destination="3HV-w7-27b" kind="push" identifier="HouseInformationSegue" id="R6e-lS-Vhq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Kc-i7-7kr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="829.5" y="91.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="LoadingBack" width="200" height="200"/>
+        <image name="navigation12" width="512" height="512"/>
+        <image name="phone325" width="512" height="512"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="R6e-lS-Vhq"/>
+    </inferredMetricsTieBreakers>
 </document>

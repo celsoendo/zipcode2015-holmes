@@ -14,34 +14,40 @@ class HousingInformationViewController: UIViewController, UICollectionViewDelega
     
     @IBOutlet weak var buttonView: UIButton!
     
+    let totalCellCount = 14
     var global_uid: String!
-    
+//    var dataSet : 
     
     override func viewDidLoad() {
-        self.view.backgroundColor = UIColor.whiteColor()
+        self.view.backgroundColor = UIColor.yellowColor()
         global_uid = AppDelegate.getGlobalString()
-//        allCheckoutItemTiles.delegate = self
-//        allCheckoutItemTiles.dataSource = self
+        allCheckoutItemTiles.delegate = self
+        allCheckoutItemTiles.dataSource = self
+        allCheckoutItemTiles.superview?.backgroundColor = UIColor.whiteColor()
         
+        AppDelegate.clearGlobalString()
     }
     
     // Collection View Stuff
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return totalCellCount
     }
     
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
         let cell = allCheckoutItemTiles.dequeueReusableCellWithReuseIdentifier("HousingInformationViewCell", forIndexPath: indexPath) as! HousingInformationViewCell
-//        cell.setUpCell()
-        if (indexPath.item < 5) {
-            cell.backgroundColor = UIColor.clearColor()
-        } else {
-            cell.backgroundColor = UIColor.grayColor()
-        }
+        cell.backgroundColor = UIColor.grayColor()
+        cell.setUpCell(indexPath.item)
         return cell
     }
-
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+//    func getValue(idx: Int) -> (label: String, value: String) {
+//        
+//    }
 }
