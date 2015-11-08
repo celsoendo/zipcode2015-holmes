@@ -1,0 +1,43 @@
+.bar, .rec1, .rec2, .rec3, .rec4, .rec5-1, .rec5-2 {
+  border-radius: 10px;
+  height: 20px;
+  margin: 0 auto;
+  margin-bottom: 5px; }
+
+.doorLeft, .rec5-1 {
+  width: 281.25px;
+  float: left;
+  margin-right: 125px; }
+
+.doorRight, .rec5-2 {
+  width: 93.75px;
+  float: left; }
+
+.blue, .rec1, .rec3, .rec5-2 {
+  background-color: #a0c5e6; }
+
+.green, .rec5-1 {
+  background-color: #94c380; }
+
+.red, .rec2 {
+  background-color: #de6768; }
+
+.orange, .rec4 {
+  background-color: #f4b171; }
+
+.logoRow {
+  width: 500px; }
+
+.rec1 {
+  width: 166.5px; }
+
+.rec2 {
+  width: 277.66667px; }
+
+.rec3 {
+  width: 388.83333px; }
+
+.rec4 {
+  width: 500px; }
+
+/*# sourceMappingURL=style.css.map */

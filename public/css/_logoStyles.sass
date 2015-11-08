@@ -1,0 +1,61 @@
+//UTILITIES
+.bar 
+    border-radius: $logoBarHeight * .5
+    height: $logoBarHeight
+    margin: 0 auto
+    margin-bottom: $logoBottomMargin
+        
+.doorLeft
+    width: ($totalLogoWidth - $logoDoorWidth)*3/4
+    float: left
+    margin-right: $logoDoorWidth
+    
+.doorRight
+    width: ($totalLogoWidth - $logoDoorWidth)/4
+    float: left
+    
+.blue 
+    background-color: $blue
+    
+.green
+    background-color: $green
+    
+.red 
+    background-color: $red
+    
+.orange
+    background-color: $orange
+    
+//ACTUAL STYLES    
+.logoRow 
+    width: $totalLogoWidth
+
+.rec1 
+    width: $minLogoBar
+    @extend .bar
+    @extend .blue
+    
+.rec2
+    width: $minLogoBar + ($minBarDifference * 1 / 3)
+    @extend .red
+    @extend .bar
+    
+.rec3
+    width: $minLogoBar + ($minBarDifference * 2 / 3)
+    @extend .blue
+    @extend .bar
+    
+.rec4
+    width: $totalLogoWidth
+    @extend .orange
+    @extend .bar
+    
+.rec5-1
+    @extend .doorLeft
+    @extend .green
+    @extend .bar
+    
+.rec5-2
+    @extend .doorRight
+    @extend .blue
+    @extend .bar

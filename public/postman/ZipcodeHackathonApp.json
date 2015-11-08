@@ -1,0 +1,56 @@
+{
+	"id": "289b0cb5-fef2-bb7a-308f-2b062df068f6",
+	"name": "ZipcodeHackathonApp",
+	"description": "",
+	"order": [
+		"2a4c2f00-3da3-1af8-7785-c091852f492c",
+		"3ab77018-ca77-a7f8-3443-f5005460c4a7"
+	],
+	"folders": [],
+	"timestamp": 1446932247980,
+	"owner": "33857",
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "2a4c2f00-3da3-1af8-7785-c091852f492c",
+			"headers": "",
+			"url": "https://zipcode-rece.c9users.io:8080/api",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "289b0cb5-fef2-bb7a-308f-2b062df068f6",
+			"data": [],
+			"dataMode": "params",
+			"name": "/api",
+			"description": "Test API!",
+			"descriptionFormat": "html",
+			"time": 1446932305160,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "3ab77018-ca77-a7f8-3443-f5005460c4a7",
+			"headers": "",
+			"url": "https://zipcode-rece.c9users.io:8080/api/listings?lat=-122.395743&lon=37.793660",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "289b0cb5-fef2-bb7a-308f-2b062df068f6",
+			"data": [],
+			"dataMode": "params",
+			"name": "/api/listings",
+			"description": "Listings",
+			"descriptionFormat": "html",
+			"time": 1446940599924,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

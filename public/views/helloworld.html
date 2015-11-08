@@ -1,0 +1,12 @@
+<div class="jumbotron text-center">
+    <h1>Yay!</h1>
+    <p>{{ tagline }}</p>
+    <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
+    
+    <div class="row">
+        
+        <div data-ng-repeat="listing in listings" class="col-sm-3">
+            <img class="house-image" ng-src="{{listing.media[0].url}}">
+        </div>
+    </div>
+</div>

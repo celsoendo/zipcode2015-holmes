@@ -1,0 +1,95 @@
+{
+	"id": "289b0cb5-fef2-bb7a-308f-2b062df068f6",
+	"name": "ZipcodeHackathonApp",
+	"description": "",
+	"order": [
+		"2a4c2f00-3da3-1af8-7785-c091852f492c"
+	],
+	"folders": [
+		{
+			"id": "88c34963-c02a-223c-52a6-f0bfc2ce4abf",
+			"name": "Google",
+			"description": "",
+			"order": [
+				"d0455f5f-2e1e-1f21-72de-17f42272ff93"
+			],
+			"owner": "33857"
+		},
+		{
+			"id": "8f184d87-6160-2c94-ba62-ee5f9a1807e4",
+			"name": "Retsly",
+			"description": "",
+			"order": [
+				"3ab77018-ca77-a7f8-3443-f5005460c4a7"
+			],
+			"owner": "33857"
+		}
+	],
+	"timestamp": 1446932247980,
+	"owner": "33857",
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "2a4c2f00-3da3-1af8-7785-c091852f492c",
+			"headers": "",
+			"url": "https://zipcode-rece.c9users.io:8080/api",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "289b0cb5-fef2-bb7a-308f-2b062df068f6",
+			"data": [],
+			"dataMode": "params",
+			"name": "Hello World!",
+			"description": "Test API!",
+			"descriptionFormat": "html",
+			"time": 1446932305160,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "3ab77018-ca77-a7f8-3443-f5005460c4a7",
+			"headers": "",
+			"url": "https://zipcode-rece.c9users.io:8080/api/retsly/listings?lat=37.789256&lon=-122.398049&radius=5km",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1446950042911,
+			"name": "Listings",
+			"description": "Parameters:\nlat\nlon\nradius (optional - default = 5km)",
+			"collectionId": "289b0cb5-fef2-bb7a-308f-2b062df068f6",
+			"responses": []
+		},
+		{
+			"id": "d0455f5f-2e1e-1f21-72de-17f42272ff93",
+			"headers": "",
+			"url": "https://zipcode-rece.c9users.io:8080/api/google/nearby?lat=37.789256&lon=-122.398049&radius=5000&types=church|school",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1446949959554,
+			"name": "Nearby",
+			"description": "Parameters:\n- lat\n- lon\n- radius (in meters - optional - default = 5000)\n- types (optional - default = church|school)",
+			"collectionId": "289b0cb5-fef2-bb7a-308f-2b062df068f6",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "d0455f5f-2e1e-1f21-72de-17f42272ff93",
+			"folder": "88c34963-c02a-223c-52a6-f0bfc2ce4abf"
+		}
+	]
+}

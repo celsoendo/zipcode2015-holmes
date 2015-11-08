@@ -1,0 +1,21 @@
+{
+  "name": "zipcode-hackathon",
+  "version": "0.0.1",
+  "description": "Backend API for Zipcode Hackathon 2015",
+  "main": "server.js",
+  "repository": "",
+  "author": "",
+  "dependencies": {
+    "angular-google-maps": "2.2.1",
+    "async": "~0.2.8",
+    "body-parser": "~1.0.1",
+    "express": "~4.5.1",
+    "googleplaces-promises": "^1.0.0",
+    "grunt-cli": "0.1.13",
+    "js-sdk": "retsly/js-sdk",
+    "method-override": "~2.0.2",
+    "request-promise": "^1.0.2",
+    "retsly-js-sdk": "^0.8.3",
+    "socket.io": "~0.9.14"
+  }
+}
