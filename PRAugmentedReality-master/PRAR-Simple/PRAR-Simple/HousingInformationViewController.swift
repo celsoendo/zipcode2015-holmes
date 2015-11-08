@@ -15,20 +15,22 @@ class HousingInformationViewController: UIViewController, UICollectionViewDelega
     @IBOutlet weak var buttonView: UIButton!
     
     var global_uid: String!
-    
+    var dataSet : 
     
     override func viewDidLoad() {
-        self.view.backgroundColor = UIColor.whiteColor()
+        self.view.backgroundColor = UIColor.yellowColor()
         global_uid = AppDelegate.getGlobalString()
         allCheckoutItemTiles.delegate = self
         allCheckoutItemTiles.dataSource = self
+        allCheckoutItemTiles.superview?.backgroundColor = UIColor.whiteColor()
         
+        AppDelegate.clearGlobalString()
     }
     
     // Collection View Stuff
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return 10
     }
     
     
@@ -42,6 +44,10 @@ class HousingInformationViewController: UIViewController, UICollectionViewDelega
             cell.backgroundColor = UIColor.grayColor()
         }
         return cell
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 
 }

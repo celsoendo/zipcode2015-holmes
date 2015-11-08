@@ -136,26 +136,26 @@ extern NSString *test;
         NSLog(@"added a location");
     }
     
-    for(int i = 0; i < [nearByLocations count]; i ++) {
-        NSDictionary* thisLocation = [nearByLocations objectAtIndex:i];
-        NSString* title = [thisLocation objectForKey:@"name"];
-        NSString* subtitle = [thisLocation objectForKey:@"vicinity"];
-        NSDictionary* coordinates = [[thisLocation objectForKey:@"geometry"] objectForKey:@"location"];
-        NSString* uID = [thisLocation objectForKey:@"place_id"];
-        double lat = [[coordinates objectForKey:@"lat"] doubleValue];
-        double lng = [[coordinates objectForKey:@"lon"] doubleValue];
-        
-        NSDictionary *point = @{
-                                @"id" : @(i + [locations count]),
-                                @"uID" : uID,
-                                @"title" : title,
-                                @"lon" : @(lng),
-                                @"lat" : @(lat),
-                                @"type": @"nearBy"
-                                };
-        [points addObject:point];
-        NSLog(@"added a nearBy location");
-    }
+//    for(int i = 0; i < [nearByLocations count]; i ++) {
+//        NSDictionary* thisLocation = [nearByLocations objectAtIndex:i];
+//        NSString* title = [thisLocation objectForKey:@"name"];
+//        NSString* subtitle = [thisLocation objectForKey:@"vicinity"];
+//        NSDictionary* coordinates = [[thisLocation objectForKey:@"geometry"] objectForKey:@"location"];
+//        NSString* uID = [thisLocation objectForKey:@"place_id"];
+//        double lat = [[coordinates objectForKey:@"lat"] doubleValue];
+//        double lng = [[coordinates objectForKey:@"lon"] doubleValue];
+//        
+//        NSDictionary *point = @{
+//                                @"id" : @(i + [locations count]),
+//                                @"uID" : uID,
+//                                @"title" : title,
+//                                @"lon" : @(lng),
+//                                @"lat" : @(lat),
+//                                @"type": @"nearBy"
+//                                };
+//        [points addObject:point];
+//        NSLog(@"added a nearBy location");
+//    }
     
     CLLocationCoordinate2D locationCoordinates = CLLocationCoordinate2DMake(33.424303, -111.929040);
     dispatch_async(dispatch_get_main_queue(), ^{

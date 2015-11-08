@@ -124,6 +124,16 @@ andUID:(NSString *)uID
     HousingInformationViewController *initViewController = [storyBoard instantiateViewControllerWithIdentifier:@"HouseInfo"];
     [self.view.window.rootViewController presentViewController:initViewController animated:true completion:nil];
     
+//    UIStoryboard *storyBoard = self.storyboard;
+//    HousingInformationViewController *houseVC = [storyBoard instantiateViewControllerWithIdentifier:@"HouseInfo"];
+//    
+//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController: houseVC];
+//    // Do whatever setup you want to here for your title bar, etc
+//    [nav presentViewController:houseVC animated:true completion:nil];
+    [[self navigationController] popToRootViewControllerAnimated:true];
+    
+    
+//    [[self navigationController] performSegueWithIdentifier:@"HouseInformationSegue" sender:[self navigationController]];
 }
 
 @end
