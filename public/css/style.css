@@ -1,11 +1,26 @@
 h1 {
   font-size: 7rem; }
 
+.white-background {
+  background-color: white; }
+
 .margin-top-s {
   margin-top: 15px; }
 
-.white-background {
-  background-color: white; }
+.margin-top-l {
+  margin-top: 45px; }
+
+.margin-bottom-m {
+  margin-bottom: 30px; }
+
+.padding-top-l {
+  padding-top: 45px; }
+
+.margin-bottom-l {
+  margin-bottom: 45px; }
+
+.padding-bottom-l {
+  padding-bottom: 45px; }
 
 .bar, .rec1, .rec2, .rec3, .rec4, .rec5-1, .rec5-2, .rec6-1, .rec6-2, .rec7-1, .rec7-2 {
   border-radius: 25px;
@@ -71,6 +86,9 @@ h1 {
   .holmes span:nth-of-type(6) {
     color: #a0c5e6; }
 
+.adkfjbasdjfnasdf {
+  display: none; }
+
 .angular-google-map-container {
   height: 400px; }
 
@@ -78,10 +96,76 @@ h1 {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 1px solid #d3d3d3;
+  border-bottom: 1px solid #373a3c;
   font-size: 35px;
   color: #9b9b9b;
-  width: 600px;
-  margin-bottom: 45px; }
+  width: 900px;
+  margin-bottom: 45px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300; }
+
+input {
+  outline: none;
+  -webkit-appearance: none; }
+
+.app-steps {
+  background-color: #373a3c;
+  color: #fff; }
+
+.app-steps {
+  -webkit-transform: skewY(2.5deg);
+  -moz-transform: skewY(2.5deg);
+  -ms-transform: skewY(2.5deg);
+  -o-transform: skewY(2.5deg);
+  transform: skewY(2.5deg);
+  -webkit-backface-visibility: hidden; }
+
+.logo-background {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.sub-heading {
+  color: white;
+  font-family: "Fredoka One", cursive;
+  font-size: 4rem; }
+
+.street-view-icon {
+  color: #de6768; }
+
+.bars-icon {
+  color: #f4b171; }
+
+.home-icon {
+  color: #94c380; }
+
+.p4 {
+  color: white;
+  font-size: 20px;
+  font-family: "Nunito", sans-serif; }
+
+.app-download {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.app-steps-text {
+  background-color: #373a3c;
+  margin-top: -40px; }
+
+.app-steps-below {
+  background-color: #373a3c;
+  color: #fff;
+  height: 130px;
+  margin-top: -40px; }
+
+.app-steps-below {
+  -webkit-transform: skewY(2.5deg);
+  -moz-transform: skewY(2.5deg);
+  -ms-transform: skewY(2.5deg);
+  -o-transform: skewY(2.5deg);
+  transform: skewY(2.5deg);
+  -webkit-backface-visibility: hidden; }
+
+.grab-it {
+  color: black; }
 
 /*# sourceMappingURL=style.css.map */

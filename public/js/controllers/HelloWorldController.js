@@ -1,13 +1,17 @@
-var app = angular.module('HelloWorldController', ['uiGmapgoogle-maps']);
+var app = angular.module('HelloWorldController', ['uiGmapgoogle-maps','nlpCompromise']);
 
-app.controller('HelloWorldController', function($scope, GetResult) {
+app.controller('HelloWorldController', function($scope, GetResult, nlp) {
     $scope.tagline = 'Hello World Sritam and Phil!';
     $scope.map = { center: { latitude: 37.7887200, longitude: -122.3983840 }, zoom: 20 };
-    
-    GetResult.retrieveData(31.544275, -110.2365725, function(data){
+
+	
+	console.log(nlp.pos('she sells seashells by the seashore').to_past().text());
+	 
+    GetResult.retrieveData(37.7835830, -122.3983258, function(data){
     		$scope.listings = (data.data.bundle);
 			console.log(data.data.bundle);
     	});
+    
 })
 
 .service('GetResult', ['$http', function($http){

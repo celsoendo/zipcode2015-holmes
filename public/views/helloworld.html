@@ -1,11 +1,11 @@
-<div class="jumbotron text-center white-background">
+<div class="jumbotron text-center white-background padding-top-l margin-top-l padding-bottom-l margn-botom-l">
     <!--<ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>-->
     
     <div class="row">
         <form class="form-tag" novalidate>
             <input class="query-input" type="text" data-ng-model="listing.query">
         </form>
-        <div data-ng-repeat="listing in listings" class="col-sm-3">
+        <div data-ng-repeat="listing in listings" class="col-sm-12">
             <img class="house-image" ng-src="{{listing.media[0].url}}">
         </div>
     </div>

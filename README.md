@@ -1,22 +1,18 @@
+#Holmes
+This is a project created for the 2015 zip.code Hackathon
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+##About
+Our product allow home buyers to search for nearby listings using their smartphone.
+Instead of a conventional search where you fill tons of fields in a form, you just open the app when you are in a neighborhood that you like and we will show you all nearby listings with augmented reality in your camera. 
+If you choose one of the listings, you'll see all the details of the listing and you can call the agent right away.
 
+##Team Members
+* Celso Hiroshi Endo  celso@celsoendo.com
+* Philip Reasa  PhilipReasa@gmail.com
+* Bernardo Avancena  ardowz@gmail.com
+* Sritam Patnaik  sritampatnaik@gmail.com
+* Lin Jing Rong (Jedd)  jingrong@u.nus.edu
 
-Welcome to your Node.js project on Cloud9 IDE!
-
-This chat example showcases how to use `socket.io` with a static `express` server.
-
-## Running the server
-
-1) Open `server.js` and start the app by clicking on the "Run" button in the top menu.
-
-2) Alternatively you can launch the app from the Terminal:
-
-    $ node server.js
-
-Once the server is running, open the project in the shape of 'https://projectname-username.c9.io/'. As you enter your name, watch the Users list (on the left) update. Once you press Enter or Send, the message is shared with all connected clients.
+##Future Features
+* Show nearby schools, churches, restaurants, groceries store, etc using Google Maps API
+* Filter the results

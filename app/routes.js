@@ -1,5 +1,6 @@
 var config = require('./config/main');
 var Retsly = require('js-sdk');
+var async = require('async');
 var GooglePlacesPromises = require('googleplaces-promises');
 var rp = require('request-promise');
 
