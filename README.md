@@ -1,5 +1,6 @@
 #Holmes
-This is a project created for the 2015 zip.code Hackathon
+This is a project created for the 2015 zip.code Hackathon - http://zipcode.rets.ly
+First prize winner on crowd's favorite award.
 
 ##About
 Our product allow home buyers to search for nearby listings using their smartphone.
