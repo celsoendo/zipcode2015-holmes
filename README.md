@@ -3,7 +3,9 @@ This is a project created for the 2015 zip.code Hackathon
 
 ##About
 Our product allow home buyers to search for nearby listings using their smartphone.
+
 Instead of a conventional search where you fill tons of fields in a form, you just open the app when you are in a neighborhood that you like and we will show you all nearby listings with augmented reality in your camera. 
+
 If you choose one of the listings, you'll see all the details of the listing and you can call the agent right away.
 
 ##Team Members
