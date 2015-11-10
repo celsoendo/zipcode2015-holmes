@@ -10,6 +10,11 @@ Instead of a conventional search where you fill tons of fields in a form, you ju
 
 If you choose one of the listings, you'll see all the details of the listing and you can call the agent right away.
 
+## To use
+- Clone this repo onto your desktop
+- Open iOS-app/Holmes/Holmes.xcodeproj in XCode-7.1
+
+
 ##Team Members
 * Celso Hiroshi Endo  celso@celsoendo.com
 * Philip Reasa  PhilipReasa@gmail.com
