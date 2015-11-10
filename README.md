@@ -13,8 +13,8 @@ If you choose one of the listings, you'll see all the details of the listing and
 ## To use
 - Fork/Clone this repo onto your desktop
 - Open iOS-app/Holmes/Holmes.xcodeproj in XCode-7.1
-- Compile!
-- Note: This App is optimized for iPhone 6! :)
+- Compile away
+- Note: This App is optimized for iPhone 6 :)
 
 
 ##Team Members
@@ -22,7 +22,7 @@ If you choose one of the listings, you'll see all the details of the listing and
 * Philip Reasa  PhilipReasa@gmail.com
 * Bernardo Avancena  ardowz@gmail.com
 * Sritam Patnaik  sritampatnaik@gmail.com
-* Lin Jing Rong (Jedd)  jingrong@u.nus.edu
+* Lim Jing Rong (Jedd)  jingrong@u.nus.edu
 
 ##Future Features
 * Show nearby schools, churches, restaurants, groceries store, etc using Google Maps API
