@@ -1,0 +1,5 @@
+.DS_Store
+Podfile.lock
+Pods/
+PRAR-Simple.xcworkspace/
+PRAR-SimpleTests/
