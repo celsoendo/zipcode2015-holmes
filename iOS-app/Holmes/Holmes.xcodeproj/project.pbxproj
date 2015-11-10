@@ -143,7 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				36CB215818E481B2000483F2 /* Graphics */,
-				36CB212918E480E7000483F2 /* PRAR-Simple */,
+				36CB212918E480E7000483F2 /* Holmes */,
 				36CB214818E480E8000483F2 /* PRAR-SimpleTests */,
 				36CB212218E480E7000483F2 /* Frameworks */,
 				36CB212118E480E7000483F2 /* Products */,
@@ -171,7 +171,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		36CB212918E480E7000483F2 /* PRAR-Simple */ = {
+		36CB212918E480E7000483F2 /* Holmes */ = {
 			isa = PBXGroup;
 			children = (
 				36CB213218E480E7000483F2 /* AppDelegate.h */,
@@ -186,6 +186,7 @@
 				36CB212A18E480E7000483F2 /* Supporting Files */,
 				4178AF6B1BEF195700ABDEFA /* PRAR-Simple-Bridging-Header.h */,
 			);
+			name = Holmes;
 			path = "PRAR-Simple";
 			sourceTree = "<group>";
 		};
